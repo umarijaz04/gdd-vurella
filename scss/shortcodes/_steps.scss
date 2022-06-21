@@ -1,0 +1,78 @@
+/*
+** Steps
+*/
+
+.steps {
+  counter-reset: step;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+  .step {
+    flex: 1 1 25%;
+    padding-right: 30px;
+    &:hover {
+      .step-bullet:before {
+        font-size: 18px;
+      }
+    }
+    .step-title h6 {
+      line-height: 1.9;
+    }
+    .step-bullet {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      background-color: $colorMain2;
+      border-radius: 50%;
+      z-index: 1;
+      &:before {
+        content: counter(step, decimal-leading-zero);
+        counter-increment: step;
+        color: $lightColor;
+        line-height: 40px;
+      transition: font-size .15s;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 19px;
+        left: 0;
+        width: 500px;
+        height: 2px;
+        z-index: -1;
+        background-color: $colorMain2;
+      }
+    }
+    @media (max-width: 767px) {
+      + .step {
+        margin-top: 30px;
+      }
+      .step-top {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        .step-title {
+          margin-left: 20px;
+          h6 {
+            line-height: 1.3;
+          }
+        }
+        .step-bullet:after {
+          top: 0;
+          bottom: 0;
+          left: 19px;
+          width: 2px;
+          height: 500px;
+        }
+      }
+      .step-content {
+        margin-left: 61px;
+      }
+    }
+  }
+}

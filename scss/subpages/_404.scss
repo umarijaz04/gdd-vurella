@@ -1,0 +1,33 @@
+/*
+** 404
+*/
+
+.error_404 {
+  background-image: url("../img/404.jpg");
+  background-position: center;
+  h3 {
+    font-size: 100px;
+    line-height: 0.9;
+    letter-spacing: 0.15em;
+    margin-bottom: 20px;
+    @media (min-width: 992px) {
+      font-size: 200px;
+    }
+  }
+  .content_404 {
+    .buttons_404 {
+      margin-top: 32px;
+      @media (min-width: 992px) {
+        margin-top: 45px;
+      }
+      a {
+        @media (min-width: 768px) {
+          min-width: 150px;
+        }
+        + a {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

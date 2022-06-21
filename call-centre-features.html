@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+
+  <head>
+    <title>Call Centre Features – Vurella</title>
+    <meta charset="utf-8" />
+    <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta HTTP-EQUIV="Expires" CONTENT="-1">
+
+    <meta name="theme-color" content="#bf1e2d" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/line-awesome.css" />
+    <link rel="stylesheet" href="css/main.css" class="color-switcher-link" />
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+      <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <![endif]-->
+    <style>
+      #more {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body class="">
+    <div class="preloader">
+      <div class="preloader_image pulse"></div>
+    </div>
+    <div
+      id="ajaxLoader"
+      class="modal fade bd-example-modal-lg"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <img src="images/Infinity.gif" width="50px" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- get in touch send modal -->
+    <div class="modal fade" id="requestSent">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Online Demonstration</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-heading">
+                We’ll Contact You Soon.
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 text-center modal-subheading demo-subheading">
+                Thank you for requesting an online demonstration. Your request
+                has <br />
+                been received and we will contact you shortly.to arrange a <br />
+                date & time that suits you. We look forward to showing you our
+                <br />
+                software, we know you won’t be disappointed.
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 text-center">
+                <button
+                  id="btnRequestClose"
+                  class="btn btn-outline-modal-close"
+                  data-dismiss="modal"
+                >
+                  <span class="modal-close-text">Close</span>
+                </button>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- wrappers for visual page editor and boxed version of template -->
+    <div id="canvas">
+      <div id="box_wrapper">
+        <!-- template sections -->
+        <section
+          class="page_toplogo ls s-py-10 s-py-xl-25 my-1"
+        >
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-md-3 logo-centered">
+              <a href="./" class="logo">
+                <img src="./images/logo-dark.png" />
+              </a>
+              <div class="divider-20 divider-md-0"></div>
+            </div>
+            <div class="col-12 col-md-9">
+              <div class="toplogo-includes">
+                <div class="media">
+                  <div class="icon-styled color-main">
+                    <i class="ico ico-envelope"></i>
+                  </div>
+                  <div class="media-body">
+                    <h6>Email Us</h6>
+                    <p>
+                      <a class="links-darkgrey" href="mailto:enquiries@vurella.com"
+                        >enquiries@vurella.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="icon-styled color-main">
+                    <i class="ico ico-phone2"></i>
+                  </div>
+                  <div class="media-body">
+                    <h6>Give Us A Call</h6>
+                    <p>
+                      <a class="links-darkgrey" href="tel:+44 203 0960 788"
+                        >+44 203 0960 788</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="social-icons d-none d-xl-block">
+                  <a
+                    href="https://www.linkedin.com/company/vurella/"
+                    class="fa fa-linkedin border-icon rounded-icon"
+                    title="linkedin"
+                    target="blank"
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/Vurella-1377243165631796/"
+                    class="fa fa-facebook border-icon rounded-icon"
+                    title="facebook"
+                    target="blank"
+                  ></a>
+                  <span class="dropdown" title="language" title="language">
+                    <img
+                      class="dropdown-toggle"
+                      src="./images/globr-icon.png"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      onmouseover="hover(this);"
+                      onmouseout="unhover(this);"
+                    />
+                    <svg height="35" width="20" style="cursor: default">
+                      <text
+                        fill="#2f2e2e"
+                        font-family="'Poppins', sans-serif"
+                        font-weight="300"
+                        font-size="12"
+                        letter-spacing=".926"
+                        style="text-transform: uppercase; direction: ltr"
+                      >
+                        <tspan x="0" y="16" id="ctry">gb</tspan>
+                      </text>
+                      <text
+                        fill="#2f2e2e"
+                        font-family="'Poppins', sans-serif"
+                        font-weight="300"
+                        font-size="12"
+                        letter-spacing=".926"
+                        style="text-transform: uppercase; direction: ltr"
+                      >
+                        <tspan x="0" y="29" id="lang">en</tspan>
+                      </text>
+                    </svg>
+                    <div
+                      class="dropdown-menu language-menu"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <a class="dropdown-item language-item" href="?ctry=gb&lang=en"
+                        ><img
+                          src="./images/flags2/gb-eng.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> English </span>
+                      </a>
+                      <a
+                        class="dropdown-item language-item disabled disabled-link"
+                        href="?ctry=fr&lang=fr"
+                        ><img
+                          src="./images/flags2/fr.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> French </span>
+                      </a>
+                      <a
+                        class="dropdown-item language-item disabled disabled-link"
+                        href="?ctry=de&lang=de"
+                        ><img
+                          src="./images/flags2/de.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> German </span>
+                      </a>
+                      <a
+                        class="dropdown-item language-item disabled disabled-link"
+                        href="?ctry=it&lang=it"
+                        ><img
+                          src="./images/flags2/it.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> Italian </span>
+                      </a>
+                      <a
+                        class="dropdown-item language-item disabled disabled-link"
+                        href="?ctry=es&lang=es"
+                        ><img
+                          src="./images/flags2/es.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> Spanish </span>
+                      </a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </section>
+
+        <header
+          class="
+            page_header
+            ls
+            s-bordertop
+            header-small
+            line-header
+            s-py-5 s-py-lg-0
+          "
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-1 col-xl-8 order-1 order-xl-1 nav-col">
+                <div class="nav-wrap with-top-buttons">
+                  <!-- main nav start -->
+                  <nav class="top-nav">
+                    <ul class="nav sf-menu">
+                      <li>
+                        <a href="/">Home</a>
+                      </li>
+                      <li>
+                        <a id="features" href="#CallHandling">Features</a>
+                      </li>
+                      <li>
+                        <a id="requestdemo" href="#RequestDemo">Request Demo</a>
+                      </li>
+                      <li>
+                        <a id="contact-us" href="#Contactus">Contact us</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <!-- eof main nav -->
+                </div>
+              </div>
+              <div class="col-11 col-xl-4 order-2 order-xl-2 text-right">
+                <div class="dropdown show">
+                  <div
+                    class="btn btn-outline-partner dropdown"
+                    id="partnerLogin"
+                  >
+                    <span style="font-weight: 300">
+                      <img
+                        style="margin-bottom: 2px"
+                        src="./images/partner-icon.png"
+                      />
+                      Partner Login
+                    </span>
+                  </div>
+                  <div
+                    class="dropdown-menu dropdown-menu-right login-menu"
+                    id="dropdownLogin"
+                  >
+                    <div class="login-heading">
+                      <img src="./images/partner-icon20x20.png" />
+                      <span> Partner Portal </span>
+                    </div>
+                    <form id="login-form" class="px-4 py-3 login-form">
+                      <div class="form-group">
+                        <label
+                          for="DropdownFormUserName"
+                          class="form-label-username"
+                          >Username</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control login-control"
+                          id="DropdownFormUserName"
+                          placeholder="E-mail Address"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label
+                          for="DropdownFormPassword"
+                          class="form-label-password"
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control login-control"
+                          id="DropdownFormPassword"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <div id="forgot-password" class="form-label-forgot">
+                        <span> Forgotten Password? </span>
+                      </div>
+                      <div
+                        class="form-group text-right"
+                        style="margin-top: 24px"
+                      >
+                        <a
+                          href="/register.html"
+                          class="btn btn-outline-register"
+                          id="register-login"
+                        >
+                          <span class="register-text">Register</span>
+                        </a>
+                        <button
+                          type="submit"
+                          class="btn btn-login"
+                          id="login-submit"
+                        >
+                          <span class="login-text">Login</span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <!-- forgot password  -->
+                <div class="dropdown show">
+                  <div
+                    class="dropdown-menu dropdown-menu-right forgot-menu"
+                    id="dropdownForgot"
+                  >
+                    <div class="forgot-heading">
+                      <img src="./images/partner-icon20x20.png" />
+                      <span> Forgotten Password </span>
+                    </div>
+                    <form
+                      id="password-reset-form"
+                      class="px-4 py-3 forgot-form"
+                    >
+                      <p class="description-forgot">
+                        To reset your password, please provide your <br />
+                        registered email address.
+                      </p>
+                      <div class="form-group">
+                        <label for="DropdownFormEmail" class="form-label-email"
+                          >E-mail Address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control login-control"
+                          id="DropdownFormEmail"
+                          name="DropdownFormEmail"
+                          placeholder="E-mail Address"
+                        />
+                      </div>
+                      <!-- <div id="forgotRecaptchaDiv"></div> -->
+                      <div
+                        class="form-group text-right"
+                        style="margin-top: 24px"
+                      >
+                        <div class="btn btn-outline-register">
+                          <span class="register-text" id="cancel-forgot"
+                            >Cancel</span
+                          >
+                        </div>
+                        <button
+                          type="submit"
+                          id="forgot-submit"
+                          class="btn btn-login"
+                        >
+                          <span class="login-text">Reset</span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- Request Sent  -->
+                <div class="dropdown show">
+                  <div
+                    class="dropdown-menu dropdown-menu-right forgot-menu"
+                    id="dropdownRequestSent"
+                  >
+                    <div class="forgot-heading">
+                      <img src="./images/partner-icon20x20.png" />
+                      <span> Request Sent </span>
+                    </div>
+                    <form class="px-4 py-3 forgot-form">
+                      <p class="description-forgot">
+                        Your password reset request has been sent. <br />
+                        Note, this is not an automated service. Your <br />
+                        password reset can take up to 24 hours. <br />
+                        However, in most cases your new password <br />
+                        will be issued within 2 hours.
+                      </p>
+                      <div
+                        class="form-group text-right"
+                        style="margin-top: 24px"
+                      >
+                        <div class="btn btn-login">
+                          <span class="login-text" id="close-request"
+                            >Close</span
+                          >
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- header toggler -->
+
+          <span class="toggle_menu main-toggle"><span></span></span>
+        </header>
+
+        <section class="page_slider ds">
+          <div class="flexslider" data-nav="false">
+            <ul class="slides">
+              <li class="cover-image">
+                <img src="./images/call-centre-agents.png" />
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                      <div
+                        class="
+                          intro_layers_wrapper intro_text_top
+                          vsuite-layout
+                          text-center
+                        "
+                      >
+                        <div class="intro_layers" style="max-width: 100%">
+                          <div
+                            class="intro_layer animate"
+                            data-animation="fadeInDown"
+                          >
+                            <div class="d-inline-block">
+                              <h3>
+                                <span
+                                  style="
+                                    font-family: 'Longview', sans-serif;
+                                    font-weight: normal;
+                                    font-size: 52px;
+                                  "
+                                >
+                                  vSUITE
+                                </span>
+                                <br />
+                                <span
+                                  style="
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-weight: 600;
+                                    font-size: 48px;
+                                  "
+                                >
+                                  CALL CENTRE SOLUTIONS
+                                </span>
+                              </h3>
+                            </div>
+                          </div>
+                          <div
+                            class="intro_layer animate"
+                            data-animation="fadeInDown"
+                          >
+                            <div class="d-inline-block">
+                              <p style="font-size: 20px">
+                                For the Alcatel-Lucent OmniPCX Office &
+                                Enterprise platforms
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="intro_layer intro_buttons animate"
+                            data-animation="fadeInDown"
+                          >
+                            <button
+                              id="request-demo"
+                              class="btn btn-request-demo"
+                            >
+                              <span style="font-weight: 300">
+                                Request Demo
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- eof flexslider -->
+        </section>
+
+        <section
+          id="Features"
+          class="
+            page_header
+            ls
+            s-bordertop
+            header-small
+            line-header
+            s-py-5 s-py-lg-0
+          "
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12 col-xl-12 order-2 order-xl-1 nav-col">
+                <div class="nav-wrap with-top-buttons">
+                  <!-- main nav start -->
+                  <nav class="top-nav2">
+                    <ul class="nav sf-menu2">
+                      <li class="active">
+                        <a id="call-handling" href="#CallHandling"
+                          >Call Handling</a
+                        >
+                      </li>
+                      <li>
+                        <a id="agent-features" href="#AgentFeatures"
+                          >Agent Features</a
+                        >
+                      </li>
+                      <li style="margin-top: -25px">
+                        <a id="supervisor-features" href="#SupervisorFeatures"
+                          >Supervisor Features</a
+                        >
+                      </li>
+                      <li style="margin-top: -25px">
+                        <a id="wallboard" href="#Wallboard">Wallboard</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <!-- eof main nav -->
+                </div>
+                <hr />
+              </div>
+            </div>
+            <div class="row" id="CallHandling">
+              <div class="col-lg-12">
+                <h3 class="feature-detail-heading">Call Handling</h3>
+                <p class="feature-detail-description">
+                  With a host of call handling features, your client can ensure
+                  their callers are provided with <br />
+                  clear information, supported by in queue options, call
+                  overflow and more.
+                </p>
+              </div>
+            </div>
+            <div class="row row-top">
+              <div class="col-lg-4">
+                <h5 class="detail-title">Welcome Message</h5>
+                <p class="detail-description">
+                  Pre-configure a personalised welcome <br />
+                  message for each call queue, allowing the <br />
+                  caller to know they have reached their chosen <br />
+                  department.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <h5 class="detail-title">In Queue Messaging</h5>
+                <p class="detail-description">
+                  Configure personalised in queue messages that <br />
+                  keep callers informed of important information. <br />
+                  Each message can also include up to twelve IVR <br />
+                  keys, which can be used to offer callers a range <br />
+                  of in queue options.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <h5 class="detail-title">In Queue Position</h5>
+                <p class="detail-description">
+                  Callers are periodically informed of their current <br />
+                  queue position, enabling them to be comforted, <br />
+                  knowing that they are moving forward in the <br />
+                  queue.
+                </p>
+              </div>
+            </div>
+            <div class="call">
+              <div class="row row-top">
+                <div class="col-lg-4">
+                  <h5 class="detail-title">Out of Hours</h5>
+                  <p class="detail-description">
+                    Schedule when queues are in and out of service. Calls routed
+                    to queues that are out of service can be overflowed to a
+                    pre-configured destination.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="detail-title">Call Back</h5>
+                  <p class="detail-description">
+                    Provides callers with the option to hangup but remain in the
+                    queue. The call continues to progress in the normal manner
+                    until it reaches the front of the queue. An outbound call is
+                    then made from the chosen agent back to the caller.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="detail-title">Call Routing Methods</h5>
+                  <p class="detail-description">
+                    Your clients can route calls using their preferred method.
+                    The chosen method can be different for each queue and
+                    includes sequential, circular, longest waiting and skill
+                    based routing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row row-show">
+              <div class="col-lg-4"></div>
+              <div class="col-lg-4 text-center less-features">
+                <div class="show_call" data-content="toggle-text">
+                  Show more features
+                  <br />
+                  <i style="margin-top: 10px" class="las la-angle-down"></i>
+                </div>
+              </div>
+              <div class="col-lg-4"></div>
+            </div>
+
+            <!-- second-section -->
+            <div class="row" id="AgentFeatures">
+              <div class="col-lg-12">
+                <h3 class="feature-detail-heading">Agent Features</h3>
+                <p class="feature-detail-description">
+                  Includes comprehensive agent features allowing agents to
+                  manage their current state <br />
+                  while answering calls quickly and in a professional manner.
+                </p>
+              </div>
+            </div>
+            <div class="row row-top">
+              <div class="col-lg-4">
+                <h5 class="detail-title">Agent Availability</h5>
+                <p class="detail-description">
+                  Agents can login, logout and and set their <br />
+                  availability by selecting from an unlimited list <br />
+                  of pre-configured absence codes.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <h5 class="detail-title">Preparation Timer</h5>
+                <p class="detail-description">
+                  Provides agents with a few seconds to prepare <br />
+                  themselves before taking the first call. <br />
+                  Additionally, during the preparation timer, the <br />
+                  agent can also make themself unavailable, <br />
+                  which allows the supervisor to know they are <br />
+                  present but not taking calls.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <h5 class="detail-title">Call Handling</h5>
+                <p class="detail-description">
+                  Calls delivered to an agent are presented with <br />
+                  the callers number, queue where the call <br />
+                  arrived and duration of the call. Agents are <br />
+                  also provided with basic call controls allowing <br />
+                  them to answer, hold and hangup calls.
+                </p>
+              </div>
+            </div>
+            <div class="agent">
+              <div class="row row-top">
+                <div class="col-lg-4">
+                  <h5 class="detail-title">Auto Logout</h5>
+                  <p class="detail-description">
+                    The system can be configured to automatically <br />
+                    log the agent out when they fail to answer a <br />
+                    call. this is useful when an agent walks away <br />
+                    from their desk and forgets to make themself <br />
+                    unavailable.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="detail-title">Queue Login/Logout</h5>
+                  <p class="detail-description">
+                    Allows agents to login and out of queues on <br />
+                    the fly. This can be very helpful when a queue <br />
+                    is extremely busy and additional agents are<br />
+                    required to handle calls.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="detail-title">Remote Working</h5>
+                  <p class="detail-description">
+                    Using Rainbow in conjunction with Vurella’s <br />
+                    Dock or smart phone app, agents can work <br />
+                    anywhere in the world. What’s more, there is no<br />
+                    need to connect to a VPN, they just need a<br />
+                    standard internet connection.
+                  </p>
+                </div>
+              </div>
+              <div class="row row-top">
+                <div class="col-lg-4">
+                  <h5 class="detail-title">Call Wrap-Up</h5>
+                  <p class="detail-description">
+                    Call wrap-up is initiated after each call and <br />
+                    provides agents with a few seconds to prepare<br />
+                    themself ready to take the next call. The <br />
+                    wrap-up time is configurable for each queue and can be ended
+                    prematurely at the agents <br />
+                    discretion.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="detail-title">Reason Codes</h5>
+                  <p class="detail-description">
+                    This useful feature enables agents to select <br />
+                    from a drop down list and specify why the call <br />
+                    was received. The reason codes and <br />
+                    descriptions are pre-configurable and included<br />
+                    as part of the supervisor reporting.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="detail-title">Raise Hand</h5>
+                  <p class="detail-description">
+                    Agents can attract the supervisors attention <br />
+                    using the raise hand feature. This informs the <br />
+                    supervisor that the agent requires assistance,<br />
+                    and is particularly useful when facing a difficult <br />
+                    caller,
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row row-show">
+              <div class="col-lg-4"></div>
+              <div class="col-lg-4 text-center less-features">
+                <div class="show_agent" data-content="toggle-text">
+                  Show more features
+                  <br />
+                  <i style="margin-top: 10px" class="las la-angle-down"></i>
+                </div>
+              </div>
+              <div class="col-lg-4"></div>
+            </div>
+
+            <!-- third section  -->
+            <div class="row" id="SupervisorFeatures">
+              <div class="col-lg-12">
+                <h3 class="feature-detail-heading">Supervisor Features</h3>
+                <p class="feature-detail-description">
+                  With the supervisor application, your client can be
+                  continually updated as to the status of <br />
+                  their call centre, by monitoring agents and generating
+                  reports.
+                </p>
+              </div>
+            </div>
+            <div class="row row-top">
+              <div class="col-lg-4">
+                <h5 class="detail-title">Agent Dashboard</h5>
+                <p class="detail-description">
+                  Using the agent dashboard, supervisors can <br />
+                  visually monitor the state of each agent. <br />
+                  Additionally, the supervisor can also see how <br />
+                  long the agent has been in their current state, <br />
+                  and to which queues they are assigned.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <h5 class="detail-title">Forced Agent Login</h5>
+                <p class="detail-description">
+                  It’s possible that agents may be required to <br />
+                  work using only a handset. Under these <br />
+                  circumstances a supervisor can log agents in <br />
+                  and set their availability without the agent <br />
+                  requiring access to a PC or laptop.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <h5 class="detail-title">ACD Reporting</h5>
+                <p class="detail-description">
+                  The supervisor application includes an <br />
+                  extensive range of reports which can be output <br />
+                  in both PDF and Excel formats. Reports can be <br />
+                  generated on the fly, or scheduled to be <br />
+                  received automatically by e-mail.
+                </p>
+              </div>
+            </div>
+            <div class="supervisor">
+              <div class="row row-top">
+                <div class="col-lg-4">
+                  <h5 class="detail-title">Queue Management</h5>
+                  <p class="detail-description">
+                    Enables supervisors to put specific queues in <br />
+                    and out of service. This is useful when a team of <br />
+                    agents require training and calls need to be <br />
+                    overflowed to a different queue.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="detail-title">Emergency Closure</h5>
+                  <p class="detail-description">
+                    With this feature, a supervisor can close down <br />
+                    their call centre with the click of a button. The <br />
+                    emergency closure option automatically puts <br />
+                    all queues out of service and redirects calls to <br />
+                    the appropriate overflow destination.
+                  </p>
+                </div>
+                <div class="col-lg-4"></div>
+              </div>
+            </div>
+            <div class="row row-show">
+              <div class="col-lg-4"></div>
+              <div class="col-lg-4 text-center less-features">
+                <div class="show_supervisor" data-content="toggle-text">
+                  Show more features
+                  <br />
+                  <i style="margin-top: 10px" class="las la-angle-down"></i>
+                </div>
+              </div>
+              <div class="col-lg-4"></div>
+            </div>
+
+            <!-- forth section  -->
+            <div class="row" id="Wallboard">
+              <div class="col-lg-12">
+                <h3 class="feature-detail-heading">Wallboard</h3>
+                <p class="feature-detail-description">
+                  Monitor live call/agent stats on a big screen monitor or a
+                  PC/Laptop via an internet browser. <br />
+                  ensuring action can be taken immediately when the call centre
+                  is not performing.
+                </p>
+              </div>
+            </div>
+            <div class="row row-top">
+              <div class="col-lg-4">
+                <h5 class="detail-title">Live Call Statistics</h5>
+                <p class="detail-description">
+                  Display a range of call stats including , calls <br />
+                  waiting, answered, abandoned, longest waiting, <br />
+                  current SLA, total calls. average ring time and <br />
+                  more.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <h5 class="detail-title">Agent Availability</h5>
+                <p class="detail-description">
+                  Display how many agents are logged in, <br />
+                  logged out, available, unavailable, on calls, <br />
+                  in wrap-up and more.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <h5 class="detail-title">Threshold Alerts</h5>
+                <p class="detail-description">
+                  Configure thresholds which cause the <br />
+                  appropriate statistic to blink and/or play a tone <br />
+                  when the threshold is broken.
+                </p>
+              </div>
+            </div>
+            <div class="wallboard">
+              <div class="row row-top">
+                <div class="col-lg-4">
+                  <h5 class="detail-title">Personalised Display</h5>
+                  <p class="detail-description">
+                    Display statistics in a range of different colours, <br />
+                    change the font and re-arrange tiles according <br />
+                    to your client preference.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="detail-title">Automatic Reset</h5>
+                  <p class="detail-description">
+                    All queues can be configured to automatically <br />
+                    reset back to zero at a specified time. This <br />
+                    allows the stats to refreshed overnight ready <br />
+                    for the following day.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="detail-title">Multiple Queues</h5>
+                  <p class="detail-description">
+                    Display one or multiple queues on a single <br />
+                    wallboard. It’s also possible to create a <br />
+                    summary board combining the totals from <br />
+                    all queues.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row row-show">
+              <div class="col-lg-4"></div>
+              <div class="col-lg-4 text-center less-features">
+                <div class="show_wallboard" data-content="toggle-text">
+                  Show more features
+                  <br />
+                  <i style="margin-top: 10px" class="las la-angle-down"></i>
+                </div>
+              </div>
+              <div class="col-lg-4"></div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="RequestDemo"
+          class="request-section ls ms s-py-55 s-py-lg-95 s-py-xl-30"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5">
+                <h5 class="request-heading">
+                  Contact us to request an online demonstration.
+                </h5>
+                <form id="request-centre" class="request-form">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control request-control"
+                      id="InputCompanyName"
+                      placeholder="Company name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control request-control"
+                      id="InputFullName"
+                      placeholder="Full name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control request-control"
+                      id="InputEmailAddress"
+                      placeholder="E-Mail address *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control request-control"
+                      id="InputContactNumber"
+                      placeholder="Contact number *"
+                    />
+                  </div>
+                  <div class="request-mandatory-text">Mandatory Fields *</div>
+                  <div id="centreRecaptchaDiv"></div>
+                  <div class="request-note text-left">
+                    <p>
+                      Note, It may take up to 24 hours for us to respond to your
+                      request, however, <br />
+                      bear with us, we’re excited to demonstrate our software to
+                      you..
+                    </p>
+                  </div>
+                  <div class="text-left" style="margin-bottom: 24px">
+                    <button
+                      type="submit"
+                      class="btn btn-request"
+                      id="vsuite-submit"
+                    >
+                      <span class="request-text">Request Demo</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-7">
+                <img src="./images/talk.png" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer
+          id="Contactus"
+          class="
+            page_footer page_footer
+            s-borderbottom-container
+            ds
+            s-pt-60 s-pb-15 s-pt-lg-90 s-pb-lg-50 s-pt-xl-110 s-pb-xl-70
+            c-gutter-50
+          "
+        >
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-md-6 col-lg-3 animate mr-auto"
+                data-animation="fadeInUp"
+              >
+                <div class="widget widget_text mt-lg-10">
+                  <a href="./" class="logo">
+                    <img src="images/logo-grey.png" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+                <div class="widget widget_nav_menu">
+                  <ul class="menu">
+                    <li>
+                      <a id="footer-home" href="/">Home</a>
+                    </li>
+                    <li>
+                      <a id="footer-our-channel" href="/#OurChannel"
+                        >Our Channel</a
+                      >
+                    </li>
+                    <li>
+                      <a id="footer-v-suite" href="/#vSUITE">vSUITE</a>
+                    </li>
+                    <li>
+                      <a id="footer-rainbow-solutions" href="/#RainbowSolutions"
+                        >Rainbow Solutions</a
+                      >
+                    </li>
+                    <li style="margin-top: 8px">
+                      <span style="font-size: 14px; padding-right: 10px"
+                        >&copy;</span
+                      >
+                      <span style="font-size: 12px" class="copyright_year"
+                        >2021 Copyright</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+                <div class="widget widget_contact_list">
+                  <div class="contact-item">
+                    <p class="title">Give Us A Call</p>
+                    <a class="content" href="tel:+44 203 0960 788"
+                      >+44 203 0960 788</a
+                    >
+                  </div>
+                  <div class="contact-item">
+                    <p class="title">Email Us</p>
+                    <a class="content" href="mailto:enquiries@vurella.com"
+                      >enquiries@vurella.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+                <div class="widget widget_social_buttons">
+                  <div class="widget-title">Join Us</div>
+                  <a
+                    href="https://www.linkedin.com/company/vurella/"
+                    class="fa fa-linkedin paper-plane border-icon rounded-icon"
+                    title="linkedin"
+                    target="blank"
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/Vurella-1377243165631796/"
+                    class="ml-0 fa fa-facebook border-icon rounded-icon"
+                    title="facebook"
+                    target="blank"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <section id="copyright" class="page_copyright ds s-py-20">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-md-12 text-center animate"
+                data-animation="fadeInUp"
+                style="color: #7f7d7d; font-size: 12px"
+              >
+                <span>
+                  Harlow Enterprise Hub, Kao Hockham Building, Harlow, Essex,
+                  CM20 2NQ
+                </span>
+                <span style="padding: 0 20px">Registered Company 09576835</span>
+                <span>VAT No. 244 3407 26</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- eof #box_wrapper -->
+    </div>
+    <!-- eof #canvas -->
+
+    <script src="js/compressed.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=loadCaptcha&render=explicit"
+      async
+      defer
+    ></script>
+    <script type="text/javascript">
+      let centreRecaptcha = false;
+      let captchaContainerCentre = null;
+      $(document).ready(function () {
+        SendEmail = async (formData) => {
+          await fetch("https://api.vurella.com/api/request", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              if (data.replace(/['"]+/g, "") === "OK") {
+                $("#requestSent").modal("show");
+              } else {
+                alert(data.replace(/['"]+/g, ""));
+              }
+              console.log("Success:", data);
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+            });
+          $("#vsuite-submit").prop("disabled", false);
+        };
+
+        $("#btnRequestClose").on("click", () => {
+          $("#requestSent").modal("hide");
+        });
+
+        $("#requestSent").on("hidden.bs.modal", function () {
+          grecaptcha.reset(captchaContainerCentre);
+          centreRecaptcha = false;
+
+          // change background color
+          $("#InputCompanyName").css("border-color", "#b9b9b9");
+          $("#InputFullName").css("border-color", "#b9b9b9");
+          $("#InputEmailAddress").css("border-color", "#b9b9b9");
+          $("#InputContactNumber").css("border-color", "#b9b9b9");
+
+          $("#InputCompanyName").val("");
+          $("#InputFullName").val("");
+          $("#InputEmailAddress").val("");
+          $("#InputContactNumber").val("");
+        });
+
+        $(window).on("load", (e) => {
+          if ($("#centreRecaptchaDiv").html().length == 0) {
+            let loadCaptcha = () => {
+              captchaContainerCentre = grecaptcha.render("centreRecaptchaDiv", {
+                sitekey: "6LfwgVIUAAAAAE3RiU5nQ7IIRrOollsFOnrGabMy",
+                // sitekey: "6LfgIIUbAAAAAJ6wwYV2wRtWC7UMbAM44n_GKGD7",
+                callback: function (response) {
+                  console.log(response);
+                  centreRecaptcha = true;
+                },
+                "expired-callback": function (response) {
+                  console.log(response);
+                  centreRecaptcha = false;
+                },
+              });
+            };
+            loadCaptcha();
+          }
+        });
+
+        $("#request-centre").on("submit", (e) => {
+          if ($("#InputCompanyName").val() == "") {
+            $("#InputCompanyName").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputCompanyName").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputFullName").val() == "") {
+            $("#InputFullName").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputFullName").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputEmailAddress").val() == "") {
+            $("#InputEmailAddress").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputEmailAddress").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputContactNumber").val() == "") {
+            $("#InputContactNumber").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputContactNumber").css("border-color", "#b9b9b9");
+          }
+
+          // form contact submit
+          if (
+            $("#InputCompanyName").val() != "" &&
+            $("#InputFullName").val() != "" &&
+            $("#InputEmailAddress").val() != "" &&
+            $("#InputContactNumber").val() != "" &&
+            centreRecaptcha != false
+          ) {
+            let formData = {
+              companyName: $("#InputCompanyName").val(),
+              name: $("#InputFullName").val(),
+              email: $("#InputEmailAddress").val(),
+              number: $("#InputContactNumber").val(),
+            };
+            $("#vsuite-submit").prop("disabled", true);
+            SendEmail(formData);
+          }
+
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>

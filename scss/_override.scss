@@ -1,0 +1,397 @@
+/*
+** Bootstrap Overrides
+*/
+@import 'override_bootstrap/breadcrumbs';
+@import 'override_bootstrap/forms';
+@import 'override_bootstrap/carousel';
+@import 'override_bootstrap/tabs';
+@import 'override_bootstrap/collapse';
+@import 'override_bootstrap/dropdowns';
+
+//making container 1170px width for wide screens
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+//other bootstrap elements
+/* modal */
+.modal-open {
+  padding-right: 0 !important;
+}
+
+.modal-backdrop {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, transparent 50%, $darkgreyColor 50%);
+  background-size: 100% 200%;
+  transition: background-position 0.7s;
+}
+
+.modal-backdrop.show {
+  background-position: 0 -100%;
+  opacity: 0.9;
+}
+
+.modal-content {
+  border-radius: 1px;
+  [class*="col-"]:last-child {
+    margin-bottom: 0;
+  }
+}
+
+#teamForm {
+  @media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 700px;
+    }
+  }
+  .modal-body {
+    padding: 50px;
+  }
+}
+
+/* media elements */
+.media > img {
+  display: block;
+}
+
+.media-body {
+  h3, h4, h5, h6 {
+    line-height: 1;
+    margin-bottom: 9px;
+  }
+  p {
+    line-height: 24px;
+  }
+  * + &,
+  & + * {
+    margin-left: 29px;
+  }
+}
+
+//for media component inside table - for dashboard
+td .media-body {
+  width: auto;
+}
+
+// our custom video placeholser
+.embed-responsive {
+  background-color: $darkgreyColor;
+}
+
+.embed-responsive-3by2 {
+  //height property removed in v4
+  height: 0;
+  padding-bottom: 49.9%;
+  background-color: $darkColor;
+  a > img {
+    opacity: 0.3;
+  }
+   a:hover > img {
+    opacity: 0.3;
+  }
+}
+
+.embed-placeholder,
+.video-link {
+  position: relative;
+  &:after {
+    font-family: "fontAwesome";
+    content: "\f04b";
+    position: absolute;
+    color: $lightColor;
+    font-size: 10px;
+    text-indent: 3px;
+    line-height: 77px;
+    border: 2px solid $colorMain;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover:after {
+    background-color: $colorMain;
+  }
+}
+
+.link-inline-item {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+}
+
+.video-link2 {
+  background-color: $colorMain;
+  display: inline-block;
+  text-align: center;
+  line-height: 77px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  transform: scale3d(1, 1, 1);
+  transition: all 0.4s cubic-bezier(0.2, 0, 0.3, 1);
+  &:after,
+  &:before {
+    background-color: $colorMain;
+    content: '';
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    border-radius: 50%;
+    opacity: 0.15;
+    z-index: -1;
+    transform: scale3d(1, 1, 1);
+    transition: transform 0.3s cubic-bezier(0.2, 0, 0.3, 1), opacity 0.3s cubic-bezier(0.2, 0, 0.3, 1) 0s;
+    animation: playButton 1s cubic-bezier(0.2, 0, 0.3, 1) infinite alternate;
+  }
+  &:after {
+    top: -24px;
+    bottom: -24px;
+    left: -24px;
+    right: -24px;
+    opacity: 0.1;
+  }
+  i {
+    font-size: 10px;
+    color: $lightColor;
+  }
+}
+
+@keyframes playButton {
+  0% {
+    opacity: 0.6;
+    transform: scale3d(0.6, 0.6, 1);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.alert {
+  border-radius: 0;
+  border-width: 0;
+  padding: 15px 33px;
+  margin-bottom: 20px;
+  color: $lightColor;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:before {
+    //content: "";
+    font-family: "FontAwesome";
+    position: relative;
+    top: 0;
+    left: -4px;
+    font-size: 14px;
+  }
+}
+
+.alert-light {
+  color: $fontColor;
+}
+
+.alert-success {
+  background-color: $colorSuccess;
+  &:before {
+    content: "\f058";
+  }
+}
+
+.alert-info {
+  background-color: $colorInfo;
+  &:before {
+    content: "\f06a";
+  }
+}
+
+.alert-warning {
+  color: $darkgreyColor;
+  background-color: $colorWarning;
+  &:before {
+    content: "\f071";
+  }
+}
+
+.alert-danger {
+  background-color:$colorDanger;
+  &:before {
+    content: "\f057";
+  }
+}
+
+.mark, mark {
+  background-color: transparent;
+}
+
+button.close {
+  min-width: 0;
+}
+
+/* small in headings */
+.h1 .small,
+.h1 small,
+.h2 .small,
+.h2 small,
+.h3 .small,
+.h3 small,
+.h4 .small,
+.h4 small,
+.h5 .small,
+.h5 small,
+.h6 .small,
+.h6 small,
+h1 .small,
+h1 small,
+h2 .small,
+h2 small,
+h3 .small,
+h3 small,
+h4 .small,
+h4 small,
+h5 .small,
+h5 small,
+h6 .small,
+h6 small {
+  color: inherit;
+  font-weight: 300;
+}
+
+/* labels */
+.label-success {
+  color: $lightColor;
+  background-color: $colorSuccess;
+}
+
+.label-info {
+  color: $lightColor;
+  background-color: $colorInfo;
+}
+
+.label-warning {
+  color: $lightColor;
+  background-color: $colorWarning;
+}
+
+.label-danger {
+  color: $lightColor;
+  background-color: $colorDanger;
+}
+
+
+/*progress bars*/
+
+
+.progress-title {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.progress {
+  background-color: $greyColor;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  height: 5px;
+  margin-bottom: 20px;
+  margin-top: 2px;
+  overflow: visible;
+  position: relative;
+  &:last-child {
+    margin-bottom: 10px;
+  }
+  .progress-bar {
+    border-radius: 5px;
+    box-shadow: none;
+    color: inherit;
+    height: 5px;
+    transition: width 0.5s ease 0.2s;
+    span {
+      font-size: 16px;
+      position: absolute;
+      right: 0;
+      top: -39px;
+    }
+  }
+  [data-transitiongoal] {
+    width: 0;
+  }
+}
+
+.progress-flex {
+  + .progress-flex {
+    margin-top: 17px;
+  }
+  .progress-to,
+  .progress-title {
+    flex-shrink: 0;
+  }
+  .progress-title {
+    min-width: 135px;
+  }
+  .progress-to {
+    margin-left: 30px;
+  }
+}
+
+.card {
+  border: 0;
+  border-radius: 0 !important;
+}
+
+.progress-grid {
+  @media (min-width:768px) {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 17px 30px;
+    align-items: center;
+  }
+  + .progress-grid {
+    margin-top: 17px;
+  }
+  .progress-title,
+  .progress {
+    margin-bottom: 0;
+  }
+  @media (max-width: 767px) {
+    .progress {
+      max-width: 85%;
+      display: inline-block;
+      margin: 13px 0 24px;
+    }
+    .progress-to {
+      float: right;
+    }
+  }
+}
+
+.container-px-30 .container-fluid .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+mark {
+  padding: 0;
+}
+
+.wp-block-cover-image-text, .wp-block-cover-text, section.wp-block-cover-image h2 {
+  color: $lightColor !important;
+}
+
+.wp-block-group.has-background + a.more-link {
+  margin-top: 25px;
+}
+
+.gallery-caption, .wp-caption {
+  .wp-caption-text {
+    color: $darkgreyColor;
+  }
+}

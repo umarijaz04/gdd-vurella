@@ -1,0 +1,79 @@
+/*
+** Team Extension
+*/
+
+.team-member.vertical-item {
+  transition: all 0.3s ease-in-out;
+  .item-content {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    @media (min-width: 1200px) {
+      padding-top: 35px;
+      padding-bottom: 30px;
+    }
+  }
+  .team-name {
+    margin-bottom: 6px;
+  }
+  .team-position {
+    margin-bottom: 13px;
+  }
+  &:hover {
+    box-shadow: $boxShadow;
+  }
+}
+
+.team-member2.vertical-item {
+  padding: 50px 40px 41px;
+  position: relative;
+  z-index: 1;
+  .item-media {
+    max-width: 170px;
+    margin: auto;
+  }
+  .item-content {
+    padding-top: 45px;
+    .team-name {
+      margin-bottom: 6px;
+    }
+    .team-position {
+      margin-bottom: 25px;
+      @media (min-width: 992px) {
+        margin-bottom: 34px;
+      }
+    }
+  }
+}
+
+.team-single {
+  .team-info {
+    .team-position {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $colorMain;
+      font-weight: 400;
+      margin-top: -6px;
+      margin-bottom: 0;
+    }
+    .team-name {
+      margin-top: 13px;
+
+    }
+    .social-icons {
+      display: block;
+      transition-delay: 0.08s;
+    }
+  }
+  &.text-center .icon-inline {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .media-block {
+    display: block;
+    .media-body {
+      margin: 20px 0 0;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+/*header includes*/
+.top-includes {
+  //for ul.top-includes
+  margin: 0;
+  padding: 0;
+
+  //media for topline top includes
+  @media (min-width: 992px) {
+    white-space: nowrap;
+
+  }
+  > * {
+    display: inline-block;
+  }
+  //margins between top includes elements
+  > li {
+    margin-left: 10px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &.border-divided {
+    @media(min-width: 992px) {
+      > li + li {
+        border-left: 1px solid $universalBorderColor;
+        padding-top: 1px;
+        margin-left: 30px;
+        padding-left: 19px;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .top-nav + & {
+      margin-left: 50px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &.md-absolute {
+      position: absolute;
+      bottom: 0;
+      //place for mobile toggler
+      right: 80px;
+    }
+  }
+
+  a.border-icon,
+  a.bg-icon,
+  a.color-bg-icon {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+}
+
+.main-includes i {
+  margin-right: 5px;
+}
+
+.top-includes {
+  .shop-dropdown {
+    margin-right: 21px;
+    @media (max-width: 767px) {
+      .dropdown-menu-right {
+        right: auto;
+        left: 13px;
+      }
+    }
+  }
+
+}
+
+.top-includes .fw-icon-title {
+  font-weight: 500;
+}
+
+.page_topline {
+  .top-includes .icon-inline {
+    .icon-styled {
+      margin-right: 5px;
+      i {
+        font-size: 24px;
+      }
+    }
+    .fw-icon-title {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+.ds.page_header_wrapper .top-includes a {
+  color: $lightColor;
+  &:hover {
+    color: $colorMain;
+  }
+}

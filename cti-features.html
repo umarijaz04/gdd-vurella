@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+
+  <head>
+    <title>CTI Features – Vurella</title>
+    <meta charset="utf-8" />
+    <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta HTTP-EQUIV="Expires" CONTENT="-1">
+
+    <meta name="theme-color" content="#bf1e2d" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/line-awesome.css" />
+    <link rel="stylesheet" href="css/main.css" class="color-switcher-link" />
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+      <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <![endif]-->
+    <style>
+      #more {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body class="">
+    <div class="preloader">
+      <div class="preloader_image pulse"></div>
+    </div>
+    <div
+      id="ajaxLoader"
+      class="modal fade bd-example-modal-lg"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <img src="images/Infinity.gif" width="50px" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- get in touch send modal -->
+    <div class="modal fade" id="requestSent">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Online Demonstration</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-heading">
+                We’ll Contact You Soon.
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 text-center modal-subheading demo-subheading">
+                Thank you for requesting an online demonstration. Your request
+                has <br />
+                been received and we will contact you shortly.to arrange a <br />
+                date & time that suits you. We look forward to showing you our
+                <br />
+                software, we know you won’t be disappointed.
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 text-center">
+                <button
+                  class="btn btn-outline-modal-close"
+                  data-dismiss="modal"
+                >
+                  <span class="modal-close-text">Close</span>
+                </button>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- wrappers for visual page editor and boxed version of template -->
+    <div id="canvas">
+      <div id="box_wrapper">
+        <!-- template sections -->
+        <section
+          class="page_toplogo ls s-py-10 s-py-xl-25 my-1"
+        >
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-md-3 logo-centered">
+              <a href="./" class="logo">
+                <img src="./images/logo-dark.png" />
+              </a>
+              <div class="divider-20 divider-md-0"></div>
+            </div>
+            <div class="col-12 col-md-9">
+              <div class="toplogo-includes">
+                <div class="media">
+                  <div class="icon-styled color-main">
+                    <i class="ico ico-envelope"></i>
+                  </div>
+                  <div class="media-body">
+                    <h6>Email Us</h6>
+                    <p>
+                      <a class="links-darkgrey" href="mailto:enquiries@vurella.com"
+                        >enquiries@vurella.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="icon-styled color-main">
+                    <i class="ico ico-phone2"></i>
+                  </div>
+                  <div class="media-body">
+                    <h6>Give Us A Call</h6>
+                    <p>
+                      <a class="links-darkgrey" href="tel:+44 203 0960 788"
+                        >+44 203 0960 788</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="social-icons d-none d-xl-block">
+                  <a
+                    href="https://www.linkedin.com/company/vurella/"
+                    class="fa fa-linkedin border-icon rounded-icon"
+                    title="linkedin"
+                    target="blank"
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/Vurella-1377243165631796/"
+                    class="fa fa-facebook border-icon rounded-icon"
+                    title="facebook"
+                    target="blank"
+                  ></a>
+                  <span class="dropdown" title="language" title="language">
+                    <img
+                      class="dropdown-toggle"
+                      src="./images/globr-icon.png"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      onmouseover="hover(this);"
+                      onmouseout="unhover(this);"
+                    />
+                    <svg height="35" width="20" style="cursor: default">
+                      <text
+                        fill="#2f2e2e"
+                        font-family="'Poppins', sans-serif"
+                        font-weight="300"
+                        font-size="12"
+                        letter-spacing=".926"
+                        style="text-transform: uppercase; direction: ltr"
+                      >
+                        <tspan x="0" y="16" id="ctry">gb</tspan>
+                      </text>
+                      <text
+                        fill="#2f2e2e"
+                        font-family="'Poppins', sans-serif"
+                        font-weight="300"
+                        font-size="12"
+                        letter-spacing=".926"
+                        style="text-transform: uppercase; direction: ltr"
+                      >
+                        <tspan x="0" y="29" id="lang">en</tspan>
+                      </text>
+                    </svg>
+                    <div
+                      class="dropdown-menu language-menu"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <a class="dropdown-item language-item" href="?ctry=gb&lang=en"
+                        ><img
+                          src="./images/flags2/gb-eng.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> English </span>
+                      </a>
+                      <a
+                        class="dropdown-item language-item disabled disabled-link"
+                        href="?ctry=fr&lang=fr"
+                        ><img
+                          src="./images/flags2/fr.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> French </span>
+                      </a>
+                      <a
+                        class="dropdown-item language-item disabled disabled-link"
+                        href="?ctry=de&lang=de"
+                        ><img
+                          src="./images/flags2/de.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> German </span>
+                      </a>
+                      <a
+                        class="dropdown-item language-item disabled disabled-link"
+                        href="?ctry=it&lang=it"
+                        ><img
+                          src="./images/flags2/it.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> Italian </span>
+                      </a>
+                      <a
+                        class="dropdown-item language-item disabled disabled-link"
+                        href="?ctry=es&lang=es"
+                        ><img
+                          src="./images/flags2/es.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> Spanish </span>
+                      </a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </section>
+
+        <header
+          class="
+            page_header
+            ls
+            s-bordertop
+            header-small
+            line-header
+            s-py-5 s-py-lg-0
+          "
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-1 col-xl-8 order-1 order-xl-1 nav-col">
+                <div class="nav-wrap with-top-buttons">
+                  <!-- main nav start -->
+                  <nav class="top-nav">
+                    <ul class="nav sf-menu">
+                      <li>
+                        <a href="/">Home</a>
+                      </li>
+                      <li>
+                        <a id="c-features" href="#CTIFeatures">Features</a>
+                      </li>
+                      <li>
+                        <a id="requestdemo" href="#RequestDemo">Request Demo</a>
+                      </li>
+                      <li>
+                        <a id="contact-us" href="#Contactus">Contact us</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <!-- eof main nav -->
+                </div>
+              </div>
+              <div class="col-11 col-xl-4 order-2 order-xl-2 text-right">
+                <div class="dropdown show">
+                  <div
+                    class="btn btn-outline-partner dropdown"
+                    id="partnerLogin"
+                  >
+                    <span style="font-weight: 300">
+                      <img
+                        style="margin-bottom: 2px"
+                        src="./images/partner-icon.png"
+                      />
+                      Partner Login
+                    </span>
+                  </div>
+                  <div
+                    class="dropdown-menu dropdown-menu-right login-menu"
+                    id="dropdownLogin"
+                  >
+                    <div class="login-heading">
+                      <img src="./images/partner-icon20x20.png" />
+                      <span> Partner Portal </span>
+                    </div>
+                    <form id="login-form" class="px-4 py-3 login-form">
+                      <div class="form-group">
+                        <label
+                          for="DropdownFormUserName"
+                          class="form-label-username"
+                          >Username</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control login-control"
+                          id="DropdownFormUserName"
+                          placeholder="E-mail Address"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label
+                          for="DropdownFormPassword"
+                          class="form-label-password"
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control login-control"
+                          id="DropdownFormPassword"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <div id="forgot-password" class="form-label-forgot">
+                        <span> Forgotten Password? </span>
+                      </div>
+                      <div
+                        class="form-group text-right"
+                        style="margin-top: 24px"
+                      >
+                        <a
+                          href="/register.html"
+                          class="btn btn-outline-register"
+                          id="register-login"
+                        >
+                          <span class="register-text">Register</span>
+                        </a>
+                        <button
+                          type="submit"
+                          class="btn btn-login"
+                          id="login-submit"
+                        >
+                          <span class="login-text">Login</span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <!-- forgot password  -->
+                <div class="dropdown show">
+                  <div
+                    class="dropdown-menu dropdown-menu-right forgot-menu"
+                    id="dropdownForgot"
+                  >
+                    <div class="forgot-heading">
+                      <img src="./images/partner-icon20x20.png" />
+                      <span> Forgotten Password </span>
+                    </div>
+                    <form
+                      id="password-reset-form"
+                      class="px-4 py-3 forgot-form"
+                    >
+                      <p class="description-forgot">
+                        To reset your password, please provide your <br />
+                        registered email address.
+                      </p>
+                      <div class="form-group">
+                        <label for="DropdownFormEmail" class="form-label-email"
+                          >E-mail Address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control login-control"
+                          id="DropdownFormEmail"
+                          name="DropdownFormEmail"
+                          placeholder="E-mail Address"
+                        />
+                      </div>
+                      <!-- <div id="forgotRecaptchaDiv"></div> -->
+                      <div
+                        class="form-group text-right"
+                        style="margin-top: 24px"
+                      >
+                        <div class="btn btn-outline-register">
+                          <span class="register-text" id="cancel-forgot"
+                            >Cancel</span
+                          >
+                        </div>
+                        <button
+                          type="submit"
+                          id="forgot-submit"
+                          class="btn btn-login"
+                        >
+                          <span class="login-text">Reset</span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- Request Sent  -->
+                <div class="dropdown show">
+                  <div
+                    class="dropdown-menu dropdown-menu-right forgot-menu"
+                    id="dropdownRequestSent"
+                  >
+                    <div class="forgot-heading">
+                      <img src="./images/partner-icon20x20.png" />
+                      <span> Request Sent </span>
+                    </div>
+                    <form class="px-4 py-3 forgot-form">
+                      <p class="description-forgot">
+                        Your password reset request has been sent. <br />
+                        Note, this is not an automated service. Your <br />
+                        password reset can take up to 24 hours. <br />
+                        However, in most cases your new password <br />
+                        will be issued within 2 hours.
+                      </p>
+                      <div
+                        class="form-group text-right"
+                        style="margin-top: 24px"
+                      >
+                        <div class="btn btn-login">
+                          <span class="login-text" id="close-request"
+                            >Close</span
+                          >
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- header toggler -->
+
+          <span class="toggle_menu main-toggle"><span></span></span>
+        </header>
+
+        <section class="page_slider ds">
+          <div class="flexslider" data-nav="false">
+            <ul class="slides">
+              <li class="cover-image">
+                <img src="./images/puzzle-pieces.png" />
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                      <div
+                        class="
+                          intro_layers_wrapper intro_text_top
+                          vsuite-layout
+                          text-center
+                        "
+                      >
+                        <div class="intro_layers" style="max-width: 100%">
+                          <div
+                            class="intro_layer animate"
+                            data-animation="fadeInDown"
+                          >
+                            <div class="d-inline-block">
+                              <h3>
+                                <span
+                                  style="
+                                    font-family: 'Longview', sans-serif;
+                                    font-weight: normal;
+                                    font-size: 52px;
+                                  "
+                                >
+                                  vSUITE
+                                </span>
+                                <br />
+                                <span
+                                  style="
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-weight: 600;
+                                    font-size: 47px;
+                                  "
+                                >
+                                  CTI FEATURES & INTEGRATION
+                                </span>
+                              </h3>
+                            </div>
+                          </div>
+                          <div
+                            class="intro_layer animate"
+                            data-animation="fadeInDown"
+                          >
+                            <div class="d-inline-block">
+                              <p style="font-size: 20px">
+                                CRM Connectors, Call Logging, Click to Dial and
+                                more
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="intro_layer intro_buttons animate"
+                            data-animation="fadeInDown"
+                          >
+                            <button
+                              id="request-demo"
+                              class="btn btn-request-demo"
+                            >
+                              <span style="font-weight: 300">
+                                Request Demo
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- eof flexslider -->
+        </section>
+
+        <section
+          id="Features"
+          class="
+            page_header
+            ls
+            s-bordertop
+            header-small
+            line-header
+            s-py-5 s-py-lg-0
+          "
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12 col-xl-12 order-2 order-xl-1 nav-col">
+                <div class="nav-wrap with-top-buttons">
+                  <!-- main nav start -->
+                  <nav class="top-nav2">
+                    <ul class="nav sf-menu2">
+                      <li class="active">
+                        <a id="cti-features" href="#CTIFeatures"
+                          >CTI Features</a
+                        >
+                      </li>
+                      <li>
+                        <a id="bespoke-integration" href="#BespokeIntegration"
+                          >Bespoke Integration</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                  <!-- eof main nav -->
+                </div>
+                <hr />
+              </div>
+            </div>
+            <div class="row" id="CTIFeatures">
+              <div class="col-lg-12">
+                <h3 class="feature-detail-heading">CTI Features</h3>
+                <p class="feature-detail-description">
+                  Our additional computer telephony integration (CTI) features,
+                  offer a range of functionality <br />
+                  to fulfill all of your clients requirements.
+                </p>
+              </div>
+            </div>
+            <div class="row row-top">
+              <div class="col-lg-4">
+                <h5 class="detail-title">CRM Connectors</h5>
+                <p class="detail-description" style="margin-bottom: 5px">
+                  Integrate with your clients CRM and pop contact <br />
+                  records for inbound and outbound calls.
+                </p>
+                <div class="row" style="font-size: 15px">
+                  <div class="col-lg-4">
+                    <ul>
+                      <li>Salesforce</li>
+                      <li>Office 365</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4">
+                    <ul>
+                      <li>MS Dynamics</li>
+                      <li>Sage CRM</li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4">
+                    <ul>
+                      <li>Zoho</li>
+                      <li>Others</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <h5 class="detail-title">Click to Dial</h5>
+                <p class="detail-description">
+                  A unique click to call solution that enables the <br />
+                  user to select a number anywhere on screen to <br />
+                  make a call. If required this feature can also be <br />
+                  integrated with 3rd party applications, allowing <br />
+                  calls to be made directly from a CRM.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <h5 class="detail-title">Call Logging</h5>
+                <p class="detail-description">
+                  Allows your client to keep a record of all calls <br />
+                  being made to and from their organization. The <br />
+                  solution provides details for local, premium, <br />
+                  mobile and international calls via a graphical <br />
+                  dashboard and host of reports.
+                </p>
+              </div>
+            </div>
+            <div class="call">
+              <div class="row row-top">
+                <div class="col-lg-4">
+                  <h5 class="detail-title">Door CAM</h5>
+                  <p class="detail-description">
+                    Provides the ability to associate a CCTV camera <br />
+                    to an internal extension, allowing the user to see <br />
+                    who is at the door, and when integrated with a <br />
+                    recognised door entry system, the user can also <br />
+                    remotely release the door lock.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="detail-title">OXO/OXE Wallboards</h5>
+                  <p class="detail-description">
+                    If your client has an existing Alcatel-Lucent <br />
+                    OXO ACD or OXE CDD solution, we can supply a <br />
+                    standalone wallboard to present live call <br />
+                    statistics via a big screen monitor or an internet <br />
+                    browser.
+                  </p>
+                </div>
+                <div class="col-lg-4">
+                  <h5 class="detail-title">OXO ACD Reporting</h5>
+                  <p class="detail-description">
+                    If your client has an existing Alcatel-Lucent <br />
+                    OXO ACD solution, you can offer our standalone <br />
+                    reporting module to provide your client with a <br />
+                    range of historical reports.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row row-show">
+              <div class="col-lg-4"></div>
+              <div class="col-lg-4 text-center less-features">
+                <div class="show_call" data-content="toggle-text">
+                  Show more features
+                  <br />
+                  <i style="margin-top: 10px" class="las la-angle-down"></i>
+                </div>
+              </div>
+              <div class="col-lg-4"></div>
+            </div>
+
+            <!-- second-section -->
+            <div class="row" id="BespokeIntegration">
+              <div class="col-lg-12">
+                <h3 class="feature-detail-heading">Bespoke Integration</h3>
+                <p class="feature-detail-description">
+                  When your client has a proprietary requirement, our bespoke
+                  integration services gives you <br />
+                  the differential required to win an opportunity.
+                </p>
+              </div>
+            </div>
+            <div class="row row-top">
+              <div class="col-lg-4">
+                <h5 class="detail-title">Bespoke CRM Connectors</h5>
+                <p class="detail-description">
+                  If your client has a bespoke CRM solution, we <br />
+                  can develop a proprietary connector to work <br />
+                  with either the OmniPCX Office or Enterprise <br />
+                  platforms, in order to pop contact records for <br />
+                  both inbound or outbound calls.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <h5 class="detail-title">Click to Dial Integration</h5>
+                <p class="detail-description">
+                  Using our click to dial solution, we can offer the <br />
+                  facility to embed a dial button directly into your <br />
+                  clients CRM.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <h5 class="detail-title">Professional Services</h5>
+                <p class="detail-description">
+                  Whether your client has a simple request or a <br />
+                  detailed requirement, our professional services <br />
+                  may be able to assist you in providing a <br />
+                  solution.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="RequestDemo"
+          class="request-section ls ms s-py-55 s-py-lg-95 s-py-xl-30"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5">
+                <h5 class="request-heading">
+                  Contact us to request an online demonstration.
+                </h5>
+                <form id="request-centre" class="request-form">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control request-control"
+                      id="InputCompanyName"
+                      placeholder="Company name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control request-control"
+                      id="InputFullName"
+                      placeholder="Full name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control request-control"
+                      id="InputEmailAddress"
+                      placeholder="E-Mail address *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control request-control"
+                      id="InputContactNumber"
+                      placeholder="Contact number *"
+                    />
+                  </div>
+                  <div class="request-mandatory-text">Mandatory Fields *</div>
+                  <div id="centreRecaptchaDiv"></div>
+                  <div class="request-note text-left">
+                    <p>
+                      Note, It may take up to 24 hours for us to respond to your
+                      request, however, <br />
+                      bear with us, we’re excited to demonstrate our software to
+                      you..
+                    </p>
+                  </div>
+                  <div class="text-left" style="margin-bottom: 24px">
+                    <button
+                      id="vsuite-submit"
+                      type="submit"
+                      class="btn btn-request"
+                    >
+                      <span class="request-text">Request Demo</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-7">
+                <img src="./images/talk.png" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer
+          id="Contactus"
+          class="
+            page_footer page_footer
+            s-borderbottom-container
+            ds
+            s-pt-60 s-pb-15 s-pt-lg-90 s-pb-lg-50 s-pt-xl-110 s-pb-xl-70
+            c-gutter-50
+          "
+        >
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-md-6 col-lg-3 animate mr-auto"
+                data-animation="fadeInUp"
+              >
+                <div class="widget widget_text mt-lg-10">
+                  <a href="./" class="logo">
+                    <img src="images/logo-grey.png" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+                <div class="widget widget_nav_menu">
+                  <ul class="menu">
+                    <li>
+                      <a id="footer-home" href="/">Home</a>
+                    </li>
+                    <li>
+                      <a id="footer-our-channel" href="/#OurChannel"
+                        >Our Channel</a
+                      >
+                    </li>
+                    <li>
+                      <a id="footer-v-suite" href="/#vSUITE">vSUITE</a>
+                    </li>
+                    <li>
+                      <a id="footer-rainbow-solutions" href="/#RainbowSolutions"
+                        >Rainbow Solutions</a
+                      >
+                    </li>
+                    <li style="margin-top: 8px">
+                      <span style="font-size: 14px; padding-right: 10px"
+                        >&copy;</span
+                      >
+                      <span style="font-size: 12px" class="copyright_year"
+                        >2021 Copyright</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+                <div class="widget widget_contact_list">
+                  <div class="contact-item">
+                    <p class="title">Give Us A Call</p>
+                    <a class="content" href="tel:+44 203 0960 788"
+                      >+44 203 0960 788</a
+                    >
+                  </div>
+                  <div class="contact-item">
+                    <p class="title">Email Us</p>
+                    <a class="content" href="mailto:enquiries@vurella.com"
+                      >enquiries@vurella.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+                <div class="widget widget_social_buttons">
+                  <div class="widget-title">Join Us</div>
+                  <a
+                    href="https://www.linkedin.com/company/vurella/"
+                    class="fa fa-linkedin paper-plane border-icon rounded-icon"
+                    title="linkedin"
+                    target="blank"
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/Vurella-1377243165631796/"
+                    class="ml-0 fa fa-facebook border-icon rounded-icon"
+                    title="facebook"
+                    target="blank"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <section id="copyright" class="page_copyright ds s-py-20">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-md-12 text-center animate"
+                data-animation="fadeInUp"
+                style="color: #7f7d7d; font-size: 12px"
+              >
+                <span>
+                  Harlow Enterprise Hub, Kao Hockham Building, Harlow, Essex,
+                  CM20 2NQ
+                </span>
+                <span style="padding: 0 20px">Registered Company 09576835</span>
+                <span>VAT No. 244 3407 26</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- eof #box_wrapper -->
+    </div>
+    <!-- eof #canvas -->
+
+    <script src="js/compressed.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=loadCaptcha&render=explicit"
+      async
+      defer
+    ></script>
+    <script type="text/javascript">
+      let centreRecaptcha = false;
+      let captchaContainerCentre = null;
+      $(document).ready(function () {
+        SendEmail = async (formData) => {
+          await fetch("https://api.vurella.com/api/request", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              if (data.replace(/['"]+/g, "") === "OK") {
+                $("#requestSent").modal("show");
+              } else {
+                alert(data.replace(/['"]+/g, ""));
+              }
+              console.log("Success:", data);
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+            });
+          $("#vsuite-submit").prop("disabled", false);
+        };
+
+        $("#btnRequestClose").on("click", () => {
+          $("#requestSent").modal("hide");
+        });
+
+        $("#requestSent").on("hidden.bs.modal", function () {
+          grecaptcha.reset(captchaContainerCentre);
+          centreRecaptcha = false;
+
+          // change background color
+          $("#InputCompanyName").css("border-color", "#b9b9b9");
+          $("#InputFullName").css("border-color", "#b9b9b9");
+          $("#InputEmailAddress").css("border-color", "#b9b9b9");
+          $("#InputContactNumber").css("border-color", "#b9b9b9");
+
+          $("#InputCompanyName").val("");
+          $("#InputFullName").val("");
+          $("#InputEmailAddress").val("");
+          $("#InputContactNumber").val("");
+        });
+
+        $(window).on("load", (e) => {
+          if ($("#centreRecaptchaDiv").html().length == 0) {
+            let loadCaptcha = () => {
+              captchaContainerCentre = grecaptcha.render("centreRecaptchaDiv", {
+                sitekey: "6LfwgVIUAAAAAE3RiU5nQ7IIRrOollsFOnrGabMy",
+                // sitekey: "6LfgIIUbAAAAAJ6wwYV2wRtWC7UMbAM44n_GKGD7",
+                callback: function (response) {
+                  console.log(response);
+                  centreRecaptcha = true;
+                },
+                "expired-callback": function (response) {
+                  console.log(response);
+                  centreRecaptcha = false;
+                },
+              });
+            };
+            loadCaptcha();
+          }
+        });
+
+        $("#request-centre").on("submit", (e) => {
+          if ($("#InputCompanyName").val() == "") {
+            $("#InputCompanyName").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputCompanyName").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputFullName").val() == "") {
+            $("#InputFullName").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputFullName").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputEmailAddress").val() == "") {
+            $("#InputEmailAddress").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputEmailAddress").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputContactNumber").val() == "") {
+            $("#InputContactNumber").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputContactNumber").css("border-color", "#b9b9b9");
+          }
+
+          // form contact submit
+          if (
+            $("#InputCompanyName").val() != "" &&
+            $("#InputFullName").val() != "" &&
+            $("#InputEmailAddress").val() != "" &&
+            $("#InputContactNumber").val() != "" &&
+            centreRecaptcha != false
+          ) {
+            let formData = {
+              companyName: $("#InputCompanyName").val(),
+              name: $("#InputFullName").val(),
+              email: $("#InputEmailAddress").val(),
+              number: $("#InputContactNumber").val(),
+            };
+            $("#vsuite-submit").prop("disabled", true);
+            SendEmail(formData);
+          }
+
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>

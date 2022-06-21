@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+
+  <head>
+    <title>Register – Vurella</title>
+    <meta charset="utf-8" />
+    <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta HTTP-EQUIV="Expires" CONTENT="-1">
+    <meta name="theme-color" content="#bf1e2d" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/line-awesome.css" />
+    <link rel="stylesheet" href="css/main.css" class="color-switcher-link" />
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+      <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="">
+    <div class="preloader">
+      <div class="preloader_image pulse"></div>
+    </div>
+    <div
+      id="ajaxLoader"
+      class="modal fade bd-example-modal-lg"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <img src="images/Infinity.gif" width="50px" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- wrappers for visual page editor and boxed version of template -->
+    <div id="canvas">
+      <div id="box_wrapper">
+        <!-- template sections -->
+        <section
+          class="page_toplogo ls s-py-10 s-py-xl-25 my-1"
+        >
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-md-3 logo-centered">
+              <a href="./" class="logo">
+                <img src="./images/logo-dark.png" />
+              </a>
+              <div class="divider-20 divider-md-0"></div>
+            </div>
+            <div class="col-12 col-md-9">
+              <div class="toplogo-includes">
+                <div class="media">
+                  <div class="icon-styled color-main">
+                    <i class="ico ico-envelope"></i>
+                  </div>
+                  <div class="media-body">
+                    <h6>Email Us</h6>
+                    <p>
+                      <a class="links-darkgrey" href="mailto:enquiries@vurella.com"
+                        >enquiries@vurella.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="icon-styled color-main">
+                    <i class="ico ico-phone2"></i>
+                  </div>
+                  <div class="media-body">
+                    <h6>Give Us A Call</h6>
+                    <p>
+                      <a class="links-darkgrey" href="tel:+44 203 0960 788"
+                        >+44 203 0960 788</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="social-icons d-none d-xl-block">
+                  <a
+                    href="https://www.linkedin.com/company/vurella/"
+                    class="fa fa-linkedin border-icon rounded-icon"
+                    title="linkedin"
+                    target="blank"
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/Vurella-1377243165631796/"
+                    class="fa fa-facebook border-icon rounded-icon"
+                    title="facebook"
+                    target="blank"
+                  ></a>
+                  <span class="dropdown" title="language" title="language">
+                    <img
+                      class="dropdown-toggle"
+                      src="./images/globr-icon.png"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      onmouseover="hover(this);"
+                      onmouseout="unhover(this);"
+                    />
+                    <svg height="35" width="20" style="cursor: default">
+                      <text
+                        fill="#2f2e2e"
+                        font-family="'Poppins', sans-serif"
+                        font-weight="300"
+                        font-size="12"
+                        letter-spacing=".926"
+                        style="text-transform: uppercase; direction: ltr"
+                      >
+                        <tspan x="0" y="16" id="ctry">gb</tspan>
+                      </text>
+                      <text
+                        fill="#2f2e2e"
+                        font-family="'Poppins', sans-serif"
+                        font-weight="300"
+                        font-size="12"
+                        letter-spacing=".926"
+                        style="text-transform: uppercase; direction: ltr"
+                      >
+                        <tspan x="0" y="29" id="lang">en</tspan>
+                      </text>
+                    </svg>
+                    <div
+                      class="dropdown-menu language-menu"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <a class="dropdown-item language-item" href="?ctry=gb&lang=en"
+                        ><img
+                          src="./images/flags2/gb-eng.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> English </span>
+                      </a>
+                      <a
+                        class="dropdown-item language-item disabled disabled-link"
+                        href="?ctry=fr&lang=fr"
+                        ><img
+                          src="./images/flags2/fr.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> French </span>
+                      </a>
+                      <a
+                        class="dropdown-item language-item disabled disabled-link"
+                        href="?ctry=de&lang=de"
+                        ><img
+                          src="./images/flags2/de.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> German </span>
+                      </a>
+                      <a
+                        class="dropdown-item language-item disabled disabled-link"
+                        href="?ctry=it&lang=it"
+                        ><img
+                          src="./images/flags2/it.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> Italian </span>
+                      </a>
+                      <a
+                        class="dropdown-item language-item disabled disabled-link"
+                        href="?ctry=es&lang=es"
+                        ><img
+                          src="./images/flags2/es.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> Spanish </span>
+                      </a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </section>
+
+        <header
+          class="
+            page_header
+            ls
+            s-bordertop
+            header-small
+            line-header
+            s-py-5 s-py-lg-0
+          "
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-1 col-xl-8 order-1 order-xl-1 nav-col">
+                <div class="nav-wrap with-top-buttons">
+                  <!-- main nav start -->
+                  <nav class="top-nav">
+                    <ul class="nav sf-menu">
+                      <li>
+                        <a href="/">Home</a>
+                      </li>
+                      <li>
+                        <a href="/#OurChannel">Our Channel</a>
+                      </li>
+                      <li>
+                        <a href="/#vSUITE">vSUITE</a>
+                      </li>
+                      <li>
+                        <a href="/#RainbowSolutions">Rainbow Solutions</a>
+                      </li>
+                      <li>
+                        <a id="contact-us" href="#Contactus">Contact us</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <!-- eof main nav -->
+                </div>
+              </div>
+              <div class="col-11 col-xl-4 order-2 order-xl-2 text-right">
+                <div class="dropdown show">
+                  <div
+                    class="btn btn-outline-partner dropdown"
+                    id="partnerLogin"
+                  >
+                    <span style="font-weight: 300">
+                      <img
+                        style="margin-bottom: 2px"
+                        src="./images/partner-icon.png"
+                      />
+                      Partner Login
+                    </span>
+                  </div>
+                  <div
+                    class="dropdown-menu dropdown-menu-right login-menu"
+                    id="dropdownLogin"
+                  >
+                    <div class="login-heading">
+                      <img src="./images/partner-icon20x20.png" />
+                      <span> Partner Portal </span>
+                    </div>
+                    <form id="login-form" class="px-4 py-3 login-form">
+                      <div class="form-group">
+                        <label
+                          for="DropdownFormUserName"
+                          class="form-label-username"
+                          >Username</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control login-control"
+                          id="DropdownFormUserName"
+                          placeholder="E-mail Address"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label
+                          for="DropdownFormPassword"
+                          class="form-label-password"
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control login-control"
+                          id="DropdownFormPassword"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <div id="forgot-password" class="form-label-forgot">
+                        <span> Forgotten Password? </span>
+                      </div>
+                      <div
+                        class="form-group text-right"
+                        style="margin-top: 24px"
+                      >
+                        <a
+                          href="/register.html"
+                          class="btn btn-outline-register"
+                          id="register-login"
+                        >
+                          <span class="register-text">Register</span>
+                        </a>
+                        <button
+                          type="submit"
+                          class="btn btn-login"
+                          id="login-submit"
+                        >
+                          <span class="login-text">Login</span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <!-- forgot password  -->
+                <div class="dropdown show">
+                  <div
+                    class="dropdown-menu dropdown-menu-right forgot-menu"
+                    id="dropdownForgot"
+                  >
+                    <div class="forgot-heading">
+                      <img src="./images/partner-icon20x20.png" />
+                      <span> Forgotten Password </span>
+                    </div>
+                    <form
+                      id="password-reset-form"
+                      class="px-4 py-3 forgot-form"
+                    >
+                      <p class="description-forgot">
+                        To reset your password, please provide your <br />
+                        registered email address.
+                      </p>
+                      <div class="form-group">
+                        <label for="DropdownFormEmail" class="form-label-email"
+                          >E-mail Address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control login-control"
+                          id="DropdownFormEmail"
+                          name="DropdownFormEmail"
+                          placeholder="E-mail Address"
+                        />
+                      </div>
+                      <!-- <div id="forgotRecaptchaDiv"></div> -->
+                      <div
+                        class="form-group text-right"
+                        style="margin-top: 24px"
+                      >
+                        <div class="btn btn-outline-register">
+                          <span class="register-text" id="cancel-forgot"
+                            >Cancel</span
+                          >
+                        </div>
+                        <button
+                          type="submit"
+                          id="forgot-submit"
+                          class="btn btn-login"
+                        >
+                          <span class="login-text">Reset</span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- Request Sent  -->
+                <div class="dropdown show">
+                  <div
+                    class="dropdown-menu dropdown-menu-right forgot-menu"
+                    id="dropdownRequestSent"
+                  >
+                    <div class="forgot-heading">
+                      <img src="./images/partner-icon20x20.png" />
+                      <span> Request Sent </span>
+                    </div>
+                    <form class="px-4 py-3 forgot-form">
+                      <p class="description-forgot">
+                        Your password reset request has been sent. <br />
+                        Note, this is not an automated service. Your <br />
+                        password reset can take up to 24 hours. <br />
+                        However, in most cases your new password <br />
+                        will be issued within 2 hours.
+                      </p>
+                      <div
+                        class="form-group text-right"
+                        style="margin-top: 24px"
+                      >
+                        <div class="btn btn-login">
+                          <span class="login-text" id="close-request"
+                            >Close</span
+                          >
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- header toggler -->
+
+          <span class="toggle_menu main-toggle"><span></span></span>
+        </header>
+
+        <!-- Section Register -->
+        <section
+          id="register"
+          class="ls ms s-py-55 s-py-lg-95 s-py-xl-105"
+          style="background-color: #f2f2f2"
+        >
+          <div class="container" style="padding-bottom: 155px">
+            <div class="row vurella-register">
+              <div class="col-reg-lg-2"></div>
+              <div class="col-md-12 col-reg-lg-8 text-center register-heading">
+                <span>Partner Portal </span>
+              </div>
+              <div class="col-reg-lg-2"></div>
+            </div>
+            <div class="row vurella-register">
+              <div class="col-reg-lg-2"></div>
+              <div class="col-md-12 col-reg-lg-8 register-col">
+                <span class="register-title"> Partner Registration. </span>
+                <p class="register-description">
+                  Register as a Vurella partner and gain access to product
+                  resources, <br />
+                  including datasheets, users guides, price lists and
+                  configuration guides.
+                </p>
+                <div class="register-detail">Your Details</div>
+                <form id="register" class="register-form">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control register-control"
+                      id="InputCompanyName"
+                      name="InputCompanyName"
+                      placeholder="Company name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control register-control"
+                      id="InputWebsite"
+                      name="InputWebsite"
+                      placeholder="Website *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control register-control"
+                      id="InputContactsName"
+                      name="InputContactsName"
+                      placeholder="Contacts name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control register-control"
+                      id="InputEmailAddress"
+                      name="InputEmailAddress"
+                      placeholder="E-Mail address *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control register-control"
+                      id="InputContactNumber"
+                      name="InputContactNumber"
+                      placeholder="Contact number *"
+                    />
+                  </div>
+                  <div class="register-mandatory-text">Mandatory Fields *</div>
+                  <div id="registerRecaptchaDiv" style="margin-top: 44px"></div>
+                  <div class="register-note text-left">
+                    <p>
+                      Note, this is not an automated service. It may take up to
+                      24 hours before you received your <br />
+                      login credentials, however, in most cases your credentials
+                      will be issued within 2 hours of us <br />
+                      receiveing your registration.
+                    </p>
+                  </div>
+                  <div class="text-left" style="margin-bottom: 10px">
+                    <button
+                      type="submit"
+                      class="btn btn-register-register"
+                      id="register-submit"
+                    >
+                      <span class="register-register-text">Register</span>
+                    </button>
+                    <a href="/" class="btn btn-outline-register-cancel">
+                      <span class="register-cancel-text">Cancel</span>
+                    </a>
+                  </div>
+                </form>
+                <div class="col-reg-lg-2"></div>
+              </div>
+            </div>
+            <!-- sent  -->
+            <div class="row vurella-register-sent" style="display: none">
+              <div class="col-reg-lg-2"></div>
+              <div class="col-md-12 col-reg-lg-8 text-center register-heading">
+                <span>Partner Portal </span>
+              </div>
+              <div class="col-reg-lg-2"></div>
+            </div>
+            <div class="row vurella-register-sent" style="display: none">
+              <div class="col-reg-lg-2"></div>
+              <div class="col-md-12 col-reg-lg-8 register-col">
+                <span class="register-title"> Registration Completed.</span>
+                <p class="register-description register-remover">
+                  Thank you, your registration details have been received. We
+                  will e-mail your <br />
+                  login credentials shortly. If we have any queries with the
+                  details you have <br />
+                  supplied, one of our representatives will contact you.
+                </p>
+                <p class="register-description">Thank you for registering.</p>
+
+                <div class="text-left" style="margin-bottom: 24px">
+                  <a href="/" class="btn btn-outline-register-cancel">
+                    <span class="register-cancel-text">Close</span>
+                  </a>
+                </div>
+
+                <div class="col-reg-lg-2"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer
+          id="Contactus"
+          class="
+            page_footer page_footer
+            s-borderbottom-container
+            ds
+            s-pt-60 s-pb-15 s-pt-lg-90 s-pb-lg-50 s-pt-xl-110 s-pb-xl-70
+            c-gutter-50
+          "
+        >
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-md-6 col-lg-3 animate mr-auto"
+                data-animation="fadeInUp"
+              >
+                <div class="widget widget_text mt-lg-10">
+                  <a href="./" class="logo">
+                    <img src="images/logo-grey.png" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+                <div class="widget widget_nav_menu">
+                  <ul class="menu">
+                    <li>
+                      <a id="footer-home" href="/">Home</a>
+                    </li>
+                    <li>
+                      <a id="footer-our-channel" href="/#OurChannel"
+                        >Our Channel</a
+                      >
+                    </li>
+                    <li>
+                      <a id="footer-v-suite" href="/#vSUITE">vSUITE</a>
+                    </li>
+                    <li>
+                      <a id="footer-rainbow-solutions" href="/#RainbowSolutions"
+                        >Rainbow Solutions</a
+                      >
+                    </li>
+                    <li style="margin-top: 8px">
+                      <span style="font-size: 14px; padding-right: 10px"
+                        >&copy;</span
+                      >
+                      <span style="font-size: 12px" class="copyright_year"
+                        >2021 Copyright</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+                <div class="widget widget_contact_list">
+                  <div class="contact-item">
+                    <p class="title">Give Us A Call</p>
+                    <a class="content" href="tel:+44 203 0960 788"
+                      >+44 203 0960 788</a
+                    >
+                  </div>
+                  <div class="contact-item">
+                    <p class="title">Email Us</p>
+                    <a class="content" href="mailto:enquiries@vurella.com"
+                      >enquiries@vurella.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+                <div class="widget widget_social_buttons">
+                  <div class="widget-title">Join Us</div>
+                  <a
+                    href="https://www.linkedin.com/company/vurella/"
+                    class="fa fa-linkedin paper-plane border-icon rounded-icon"
+                    title="linkedin"
+                    target="blank"
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/Vurella-1377243165631796/"
+                    class="ml-0 fa fa-facebook border-icon rounded-icon"
+                    title="facebook"
+                    target="blank"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <section id="copyright" class="page_copyright ds s-py-20">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-md-12 text-center animate"
+                data-animation="fadeInUp"
+                style="color: #7f7d7d; font-size: 12px"
+              >
+                <span>
+                  Harlow Enterprise Hub, Kao Hockham Building, Harlow, Essex,
+                  CM20 2NQ
+                </span>
+                <span style="padding: 0 20px">Registered Company 09576835</span>
+                <span>VAT No. 244 3407 26</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- eof #box_wrapper -->
+    </div>
+    <!-- eof #canvas -->
+
+    <script src="js/compressed.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=loadCaptcha&render=explicit"
+      async
+      defer
+    ></script>
+    <script type="text/javascript">
+      let registerRecaptcha = false;
+      let captchaContainerRegister = null;
+      $(document).ready(function () {
+        SendEmail = async (formData) => {
+          await fetch("https://api.vurella.com/api/register", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              if (data.replace(/['"]+/g, "") === "OK") {
+                $(".vurella-register").css("display", "none");
+                $(".vurella-register-sent").fadeIn();
+              } else {
+                alert(data.replace(/['"]+/g, ""));
+                $("#register-submit").prop("disabled", false);
+              }
+              console.log("Success:", data);
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              $("#register-submit").prop("disabled", false);
+            });
+        };
+
+        $(window).on("load", (e) => {
+          if ($("#registerRecaptchaDiv").html().length == 0) {
+            let loadCaptcha = () => {
+              captchaContainerRegister = grecaptcha.render(
+                "registerRecaptchaDiv",
+                {
+                  sitekey: "6LfwgVIUAAAAAE3RiU5nQ7IIRrOollsFOnrGabMy",
+                  // sitekey: "6LfgIIUbAAAAAJ6wwYV2wRtWC7UMbAM44n_GKGD7",
+                  callback: function (response) {
+                    console.log(response);
+                    registerRecaptcha = true;
+                  },
+                  "expired-callback": function (response) {
+                    console.log(response);
+                    registerRecaptcha = false;
+                  },
+                }
+              );
+            };
+            loadCaptcha();
+          }
+        });
+
+        $("#register").on("submit", (e) => {
+          if ($("#InputCompanyName").val() == "") {
+            $("#InputCompanyName").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputCompanyName").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputWebsite").val() == "") {
+            $("#InputWebsite").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputWebsite").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputContactsName").val() == "") {
+            $("#InputContactsName").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputContactsName").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputEmailAddress").val() == "") {
+            $("#InputEmailAddress").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputEmailAddress").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputContactNumber").val() == "") {
+            $("#InputContactNumber").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputContactNumber").css("border-color", "#b9b9b9");
+          }
+
+          // form contact submit
+          if (
+            $("#InputCompanyName").val() != "" &&
+            $("#InputWebsite").val() != "" &&
+            $("#InputContactsName").val() != "" &&
+            $("#InputEmailAddress").val() != "" &&
+            $("#InputContactNumber").val() != "" &&
+            registerRecaptcha != false
+          ) {
+            let formData = {
+              companyName: $("#InputCompanyName").val(),
+              website: $("#InputWebsite").val(),
+              name: $("#InputContactsName").val(),
+              email: $("#InputEmailAddress").val(),
+              number: $("#InputContactNumber").val(),
+            };
+            $("#register-submit").prop("disabled", true);
+            SendEmail(formData);
+          }
+
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>

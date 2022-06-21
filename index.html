@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+
+  <head>
+    <title>Vurella</title>
+    <meta charset="utf-8" />
+    <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta HTTP-EQUIV="Expires" CONTENT="-1">
+
+    <meta name="theme-color" content="#bf1e2d" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/line-awesome.css" />
+    <link rel="stylesheet" href="css/main.css" class="color-switcher-link" />
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+      <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="pr-0">
+    <div class="preloader">
+      <div class="preloader_image pulse"></div>
+    </div>
+    <!-- get in touch modal -->
+    <div class="modal fade" id="getInTouch">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Get In Touch</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-img">
+                <img src="./images/rainbow-tm.png" />
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-heading">
+                Call Centre Agent
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-subheading">
+                Please contact me, I’m interested in <br />
+                knowing more about this.
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 text-center">
+                <form id="contact-form" class="getin-form">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputCompanyName"
+                      name="InputCompanyName"
+                      placeholder="Company Name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputFullName"
+                      name="InputFullName"
+                      placeholder="Full name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control getin-control"
+                      id="InputEmail"
+                      name="InputEmail"
+                      placeholder="E-mail address *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputContactNumber"
+                      name="InputContactNumber"
+                      placeholder="Contact number *"
+                    />
+                  </div>
+                  <div class="mandatory-text">Mandatory Fields *</div>
+                  <div id="getInTouchRecaptchaDiv"></div>
+                  <div class="modal-note text-left">
+                    <p>
+                      Note, It may take up to 24 hours for us to respond to your
+                      request, however, <br />
+                      bear with us, we’re excited to provide you with more
+                      details.
+                    </p>
+                  </div>
+                  <div class="text-left" style="margin-bottom: 24px">
+                    <button
+                      type="submit"
+                      class="btn btn-contact"
+                      id="btncontact-me"
+                    >
+                      <span class="contact-text">Contact Me</span>
+                    </button>
+                    <button
+                      class="btn btn-outline-modal-cancel"
+                      id="btnGetInTouchCancel"
+                      data-dismiss="modal"
+                    >
+                      <span class="modal-cancel-text">Cancel</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="getInTouchBLF">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Get In Touch</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-img">
+                <img src="./images/rainbow-tm.png" />
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-heading">
+                Busy Lamp Field
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-subheading">
+                Please contact me, I’m interested in <br />
+                knowing more about this.
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 text-center">
+                <form id="contact-form-blf" class="getin-form">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputCompanyNameBLF"
+                      name="InputCompanyNameBLF"
+                      placeholder="Company Name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputFullNameBLF"
+                      name="InputFullNameBLF"
+                      placeholder="Full name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control getin-control"
+                      id="InputEmailBLF"
+                      name="InputEmailBLF"
+                      placeholder="E-mail address *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputContactNumberBLF"
+                      name="InputContactNumberBLF"
+                      placeholder="Contact number *"
+                    />
+                  </div>
+                  <div class="mandatory-text">Mandatory Fields *</div>
+                  <div id="getInTouchBLFRecaptchaDiv"></div>
+                  <div class="modal-note text-left">
+                    <p>
+                      Note, It may take up to 24 hours for us to respond to your
+                      request, however, <br />
+                      bear with us, we’re excited to provide you with more
+                      details.
+                    </p>
+                  </div>
+                  <div class="text-left" style="margin-bottom: 24px">
+                    <button
+                      type="submit"
+                      class="btn btn-contact"
+                      id="btncontact-me-blf"
+                    >
+                      <span class="contact-text">Contact Me</span>
+                    </button>
+                    <button
+                      class="btn btn-outline-modal-cancel"
+                      id="btnGetInTouchBLFCancel"
+                      data-dismiss="modal"
+                    >
+                      <span class="modal-cancel-text">Cancel</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="getInTouchR">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Get In Touch</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-img">
+                <img src="./images/rainbow-tm.png" />
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-heading">
+                Rainbow Solutions
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-subheading">
+                Please contact me, I’m interested in <br />
+                knowing more about this.
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 text-center">
+                <form id="contact-form-r" class="getin-form">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputCompanyNameR"
+                      name="InputCompanyNameR"
+                      placeholder="Company Name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputFullNameR"
+                      name="InputFullNameR"
+                      placeholder="Full name *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control getin-control"
+                      id="InputEmailR"
+                      name="InputEmailR"
+                      placeholder="E-mail address *"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control getin-control"
+                      id="InputContactNumberR"
+                      name="InputContactNumberR"
+                      placeholder="Contact number *"
+                    />
+                  </div>
+                  <div class="mandatory-text">Mandatory Fields *</div>
+                  <div id="getInTouchRRecaptchaDiv"></div>
+                  <div class="modal-note text-left">
+                    <p>
+                      Note, It may take up to 24 hours for us to respond to your
+                      request, however, <br />
+                      bear with us, we’re excited to provide you with more
+                      details.
+                    </p>
+                  </div>
+                  <div class="text-left" style="margin-bottom: 24px">
+                    <button
+                      type="submit"
+                      class="btn btn-contact"
+                      id="btncontact-me-r"
+                    >
+                      <span class="contact-text">Contact Me</span>
+                    </button>
+                    <button
+                      class="btn btn-outline-modal-cancel"
+                      id="btnGetInTouchRCancel"
+                      data-dismiss="modal"
+                    >
+                      <span class="modal-cancel-text">Cancel</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- get in touch send modal -->
+    <div class="modal fade" id="getInTouchSent">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Get In Touch</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center modal-heading">
+                We’ll Contact You Soon.
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div
+                class="col-md-10 text-center modal-subheading sent-subheading"
+              >
+                Thank you for contacting us. Your request has been received
+                <br />
+                and we will contact you shortly. It could take up to 24 hours
+                for us to <br />
+                get back to you, however, well try our best to respond within a
+                <br />
+                couple of hours.
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 text-center">
+                <button
+                  class="btn btn-outline-modal-close"
+                  data-dismiss="modal"
+                >
+                  <span class="modal-close-text">Close</span>
+                </button>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="ajaxLoader"
+      class="modal fade bd-example-modal-lg"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <img src="images/Infinity.gif" width="50px" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- wrappers for visual page editor and boxed version of template -->
+    <div id="canvas">
+      <div id="box_wrapper">
+        <!-- template sections -->
+        <section id="Home" class="page_toplogo ls s-py-10 s-py-xl-25 my-1">
+          <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-12 col-md-3 logo-centered">
+                <a href="./" class="logo">
+                  <img src="./images/logo-dark.png" />
+                </a>
+                <div class="divider-20 divider-md-0"></div>
+              </div>
+              <div class="col-12 col-md-9">
+                <div class="toplogo-includes">
+                  <div class="media">
+                    <div class="icon-styled color-main">
+                      <i class="ico ico-envelope"></i>
+                    </div>
+                    <div class="media-body">
+                      <h6>Email Us</h6>
+                      <p>
+                        <a
+                          class="links-darkgrey"
+                          href="mailto:enquiries@vurella.com"
+                          >enquiries@vurella.com</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <div class="icon-styled color-main">
+                      <i class="ico ico-phone2"></i>
+                    </div>
+                    <div class="media-body">
+                      <h6>Give Us A Call</h6>
+                      <p>
+                        <a class="links-darkgrey" href="tel:+44 203 0960 788"
+                          >+44 203 0960 788</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="social-icons d-none d-xl-block">
+                    <a
+                      href="https://www.linkedin.com/company/vurella/"
+                      class="fa fa-linkedin border-icon rounded-icon"
+                      title="linkedin"
+                      target="blank"
+                    ></a>
+                    <a
+                      href="https://www.facebook.com/Vurella-1377243165631796/"
+                      class="fa fa-facebook border-icon rounded-icon"
+                      title="facebook"
+                      target="blank"
+                    ></a>
+                    <span class="dropdown" title="language" title="language">
+                      <img
+                        class="dropdown-toggle"
+                        src="./images/globr-icon.png"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        onmouseover="hover(this);"
+                        onmouseout="unhover(this);"
+                      />
+                      <svg height="35" width="20" style="cursor: default">
+                        <text
+                          fill="#2f2e2e"
+                          font-family="'Poppins', sans-serif"
+                          font-weight="300"
+                          font-size="12"
+                          letter-spacing=".926"
+                          style="text-transform: uppercase; direction: ltr"
+                        >
+                          <tspan x="0" y="16" id="ctry">gb</tspan>
+                        </text>
+                        <text
+                          fill="#2f2e2e"
+                          font-family="'Poppins', sans-serif"
+                          font-weight="300"
+                          font-size="12"
+                          letter-spacing=".926"
+                          style="text-transform: uppercase; direction: ltr"
+                        >
+                          <tspan x="0" y="29" id="lang">en</tspan>
+                        </text>
+                      </svg>
+                      <div
+                        class="dropdown-menu language-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a
+                          class="dropdown-item language-item"
+                          href="?ctry=gb&lang=en"
+                          ><img
+                            src="./images/flags2/gb-eng.png"
+                            width="25px"
+                            class="language-text"
+                          />
+                          <span> English </span>
+                        </a>
+                        <a
+                          class="
+                            dropdown-item
+                            language-item
+                            disabled disabled-link
+                          "
+                          href="?ctry=fr&lang=fr"
+                          ><img
+                            src="./images/flags2/fr.png"
+                            width="25px"
+                            class="language-text"
+                          />
+                          <span> French </span>
+                        </a>
+                        <a
+                          class="
+                            dropdown-item
+                            language-item
+                            disabled disabled-link
+                          "
+                          href="?ctry=de&lang=de"
+                          ><img
+                            src="./images/flags2/de.png"
+                            width="25px"
+                            class="language-text"
+                          />
+                          <span> German </span>
+                        </a>
+                        <a
+                          class="
+                            dropdown-item
+                            language-item
+                            disabled disabled-link
+                          "
+                          href="?ctry=it&lang=it"
+                          ><img
+                            src="./images/flags2/it.png"
+                            width="25px"
+                            class="language-text"
+                          />
+                          <span> Italian </span>
+                        </a>
+                        <a
+                          class="
+                            dropdown-item
+                            language-item
+                            disabled disabled-link
+                          "
+                          href="?ctry=es&lang=es"
+                          ><img
+                            src="./images/flags2/es.png"
+                            width="25px"
+                            class="language-text"
+                          />
+                          <span> Spanish </span>
+                        </a>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <header
+          class="
+            page_header
+            ls
+            s-bordertop
+            header-small
+            line-header
+            s-py-5 s-py-lg-0
+          "
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-1 col-xl-8 order-1 order-xl-1 nav-col">
+                <div class="nav-wrap with-top-buttons">
+                  <!-- main nav start -->
+                  <nav class="top-nav">
+                    <ul class="nav sf-menu">
+                      <li class="active">
+                        <a id="home" href="#Home">Home</a>
+                      </li>
+                      <li>
+                        <a id="our-channel" href="#OurChannel">Our Channel</a>
+                      </li>
+                      <li>
+                        <a id="v-suite" href="#vSUITE">vSUITE</a>
+                      </li>
+                      <li>
+                        <a id="rainbow-solutions" href="#RainbowSolutions"
+                          >Rainbow Solutions</a
+                        >
+                      </li>
+                      <li>
+                        <a id="contact-us" href="#Contactus">Contact us</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <!-- eof main nav -->
+                </div>
+              </div>
+              <div class="col-11 col-xl-4 order-2 order-xl-2 text-right">
+                <div class="dropdown show">
+                  <div
+                    class="btn btn-outline-partner dropdown"
+                    id="partnerLogin"
+                  >
+                    <span style="font-weight: 300">
+                      <img
+                        style="margin-bottom: 2px"
+                        src="./images/partner-icon.png"
+                      />
+                      Partner Login
+                    </span>
+                  </div>
+                  <div
+                    class="dropdown-menu dropdown-menu-right login-menu"
+                    id="dropdownLogin"
+                  >
+                    <div class="login-heading">
+                      <img src="./images/partner-icon20x20.png" />
+                      <span> Partner Portal </span>
+                    </div>
+                    <form id="login-form" class="px-4 py-3 login-form">
+                      <div class="form-group">
+                        <label
+                          for="DropdownFormUserName"
+                          class="form-label-username"
+                          >Username</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control login-control"
+                          id="DropdownFormUserName"
+                          placeholder="E-mail Address"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label
+                          for="DropdownFormPassword"
+                          class="form-label-password"
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control login-control"
+                          id="DropdownFormPassword"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <div id="forgot-password" class="form-label-forgot">
+                        <span> Forgotten Password? </span>
+                      </div>
+                      <div
+                        class="form-group text-right"
+                        style="margin-top: 24px"
+                      >
+                        <a
+                          href="/register.html"
+                          class="btn btn-outline-register"
+                          id="register-login"
+                        >
+                          <span class="register-text">Register</span>
+                        </a>
+                        <button
+                          type="submit"
+                          class="btn btn-login"
+                          id="login-submit"
+                        >
+                          <span class="login-text">Login</span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <!-- forgot password  -->
+                <div class="dropdown show">
+                  <div
+                    class="dropdown-menu dropdown-menu-right forgot-menu"
+                    id="dropdownForgot"
+                  >
+                    <div class="forgot-heading">
+                      <img src="./images/partner-icon20x20.png" />
+                      <span> Forgotten Password </span>
+                    </div>
+                    <form
+                      id="password-reset-form"
+                      class="px-4 py-3 forgot-form"
+                    >
+                      <p class="description-forgot">
+                        To reset your password, please provide your <br />
+                        registered email address.
+                      </p>
+                      <div class="form-group">
+                        <label for="DropdownFormEmail" class="form-label-email"
+                          >E-mail Address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control login-control"
+                          id="DropdownFormEmail"
+                          name="DropdownFormEmail"
+                          placeholder="E-mail Address"
+                        />
+                      </div>
+                      <!-- <div id="forgotRecaptchaDiv"></div> -->
+                      <div
+                        class="form-group text-right"
+                        style="margin-top: 24px"
+                      >
+                        <div class="btn btn-outline-register">
+                          <span class="register-text" id="cancel-forgot"
+                            >Cancel</span
+                          >
+                        </div>
+                        <button
+                          type="submit"
+                          id="forgot-submit"
+                          class="btn btn-login"
+                        >
+                          <span class="login-text">Reset</span>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- Request Sent  -->
+                <div class="dropdown show">
+                  <div
+                    class="dropdown-menu dropdown-menu-right forgot-menu"
+                    id="dropdownRequestSent"
+                  >
+                    <div class="forgot-heading">
+                      <img src="./images/partner-icon20x20.png" />
+                      <span> Request Sent </span>
+                    </div>
+                    <form class="px-4 py-3 forgot-form">
+                      <p class="description-forgot">
+                        Your password reset request has been sent. <br />
+                        Note, this is not an automated service. Your <br />
+                        password reset can take up to 24 hours. <br />
+                        However, in most cases your new password <br />
+                        will be issued within 2 hours.
+                      </p>
+                      <div
+                        class="form-group text-right"
+                        style="margin-top: 24px"
+                      >
+                        <div class="btn btn-login">
+                          <span class="login-text" id="close-request"
+                            >Close</span
+                          >
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- header toggler -->
+
+          <span class="toggle_menu main-toggle"><span></span></span>
+        </header>
+
+        <section class="page_slider ds">
+          <div class="flexslider" data-nav="false">
+            <ul class="slides">
+              <li class="cover-image">
+                <img src="./images/slide04.jpg" />
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div
+                        class="intro_layers_wrapper intro_text_top"
+                        style="top: 0"
+                      >
+                        <div class="intro_layers">
+                          <div
+                            class="intro_layer animate"
+                            data-animation="fadeInDown"
+                          >
+                            <div class="d-inline-block">
+                              <h3>
+                                <span
+                                  style="
+                                    font-family: 'Longview', sans-serif;
+                                    font-weight: normal;
+                                  "
+                                >
+                                  vSUITE
+                                </span>
+                                <br />
+                                <span
+                                  style="font-family: 'Montserrat', sans-serif"
+                                >
+                                  Business Telephony Software
+                                </span>
+                              </h3>
+                            </div>
+                          </div>
+                          <div
+                            class="intro_layer animate"
+                            data-animation="fadeInDown"
+                          >
+                            <div class="d-inline-block">
+                              <p class="remove-br">
+                                We provide call centre solutions, call recording
+                                and CTI features
+                                <br />for both the Alcatel-Lucent OmniPCX Office
+                                & Enterprise.
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="intro_layer intro_buttons animate"
+                            data-animation="fadeInDown"
+                          >
+                            <button
+                              id="tell-me-more"
+                              class="btn with-arrow btn-slider"
+                            >
+                              <span style="font-weight: 300">
+                                Tell Me More
+                                <i class="las la-arrow-right"></i>
+                              </span>
+                            </button>
+                          </div>
+                          <div
+                            class="intro_layer intro_video animate"
+                            data-animation="fadeInDown"
+                          >
+                            <a
+                              href="#"
+                              class="photoswipe-link video-link2"
+                              data-iframe="https://www.youtube.com/embed/EBZYBXai43k"
+                              data-index="1"
+                            >
+                              <i class="fa fa-play"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <!-- eof .intro_layers -->
+                      </div>
+                      <!-- eof .intro_layers_wrapper -->
+                    </div>
+                    <!-- eof .col-* -->
+                  </div>
+                  <!-- eof .row -->
+                </div>
+                <!-- eof .container -->
+              </li>
+            </ul>
+          </div>
+          <!-- eof flexslider -->
+        </section>
+
+        <!-- Section After Intro -->
+        <section
+          class="
+            ds
+            bg-transparent
+            mt-n-30 mt-n-lg-80
+            after-intro
+            s-pt-0 s-pt-lg-10 s-pb-5
+          "
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 z-3">
+                <a
+                  id="media-more-details"
+                  href="#MoreDetails"
+                  class="media ls box-shadow text-left"
+                >
+                  <img src="./images/call-centre-icon.png" />
+                  <div class="media-body">
+                    <h5>Call Centre</h5>
+                    <p>Call routing, Wallboard & Reports.</p>
+                  </div>
+                </a>
+                <div class="divider-30 divider-lg-0"></div>
+              </div>
+              <div class="col-md-6 col-lg-4 z-3">
+                <a
+                  id="media-call-recording"
+                  href="#CallRecording"
+                  class="media ls box-shadow text-left"
+                >
+                  <img src="./images/call-recording-icon.png" />
+                  <div class="media-body">
+                    <h5>Call Recording</h5>
+                    <p>For SIP, VoIP, ISDN & Analog.</p>
+                  </div>
+                </a>
+                <div class="divider-30 divider-lg-0"></div>
+              </div>
+              <div class="col-lg-4 z-3">
+                <a
+                  id="media-rainbow-solutions"
+                  href="#RainbowSolutions"
+                  class="media ls box-shadow text-left"
+                >
+                  <img src="./images/rainbow-logo.png" />
+                  <div class="media-body">
+                    <h5>Rainbow Solutions</h5>
+                    <p>ACD, BLF and Integration</p>
+                  </div>
+                </a>
+
+                <div class="divider-30 divider-md-0"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section OurChannel -->
+        <section id="OurChannel" class="ls ms s-py-55 s-py-lg-95 s-py-xl-105">
+          <div class="container" style="padding-bottom: 155px">
+            <div class="row">
+              <div class="offset-lg-2 col-lg-8 text-center card-head">
+                <p class="subheading"><img src="/images/ale-logo.png" /></p>
+                <h4 class="special-heading">
+                  <span id="content1">Developer and </span>Solution Partner
+                </h4>
+                <div class="divider-10 divider-lg-20"></div>
+              </div>
+
+              <div class="col-md-12 col-lg-6">
+                <div class="card card-left">
+                  <img class="card-img-top" src="./images/world-map.png" />
+                  <div class="card-body our-channel-body">
+                    <h5 class="card-title our-channel-title">Accredited</h5>
+                    <h6 class="card-subtitle our-channel-subtitle">
+                      Application Partner
+                    </h6>
+                    <p class="card-text our-channel-text">
+                      Vurella are proud to be part of the Alcatel Lucent
+                      Enterprise Developer and Solution Partner Program. As
+                      members of the DSPP, Vurella has access to
+                      Alcatel-Lucent’s certification team, who collaborate
+                      closely with us to quality assure our software before
+                      providing certification.
+                    </p>
+                    <a
+                      href="https://www.al-enterprise.com/en/partners/dspp"
+                      target="blank"
+                      class="btn btn-outline-alcatel"
+                    >
+                      <span style="font-weight: 300"
+                        >ALE DSPP
+                        <i class="las la-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="spacer"></div>
+              <div class="col-md-12 col-lg-6">
+                <div class="card card-right">
+                  <img
+                    class="card-img-top"
+                    src="./images/distributors-partners.png"
+                  />
+                  <div class="card-body our-channel-body">
+                    <h5 class="card-title our-channel-title">Our Channel</h5>
+                    <h6 class="card-subtitle our-channel-subtitle">
+                      Distributors and Partners
+                    </h6>
+                    <p class="card-text our-channel-text">
+                      We do not provide our solutions directly to the end user.
+                      Instead we use accredited Alcatel Lucent Regional
+                      Distributors and Business Partners. Why not contact us or
+                      register on our business partner portal to access full
+                      product and pricing information.
+                    </p>
+                    <a href="/register.html" class="btn btn-outline-alcatel">
+                      <span style="font-weight: 300"
+                        >Register
+                        <i class="las la-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section vSuite -->
+        <section id="vSUITE" class="mobile-phone">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-5">
+                <div class="card-body">
+                  <div class="d-inline-block">
+                    <h3 class="vsuite">vSUITE</h3>
+                  </div>
+                  <p class="card-text look-no">
+                    Look no further, vSUITE is a comprehensive collection of
+                    telephony applications designed to enrich your clients
+                    Alcatel-Lucent telephony platform. What’s more, many of our
+                    applications are now closely integrated with Rainbow to
+                    offer the end user a seamless experience. <br /><br />
+                    So, whether your client is a large corporate enterprise or a
+                    small to medium sized business, Vurella’s vSUITE
+                    applications will fulfill their requirements.
+                  </p>
+                  <button id="more-details" class="btn with-arrow btn-dark">
+                    <span style="font-weight: 300"
+                      >More Details
+                      <i class="las la-arrow-right"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="divider-60 divider-lg-0"></div>
+              </div>
+              <div class="col-md-12 col-lg-7">
+                <img src="./images/mobile-laptop-monitor-phone.png" />
+                <div class="divider-60 divider-lg-0"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section after vSuite -->
+        <section class="ls ms s-py-55 s-py-lg-95 s-py-xl-130">
+          <div class="container feature-container">
+            <div class="row text-center">
+              <div class="col-md-12 col-lg-4">
+                <img src="./images/box-icon.png" />
+                <h4 class="box-heading">
+                  Everything you need <br />
+                  out of one box.
+                </h4>
+                <p>
+                  No need to collaborate with multiple <br />
+                  suppliers, we do it all.
+                </p>
+              </div>
+              <div class="spacer"></div>
+              <div class="col-md-12 col-lg-4">
+                <img src="./images/globe-icon.png" />
+                <h4 class="box-heading">
+                  Established software, <br />
+                  sold world wide.
+                </h4>
+                <p>
+                  Simple professional solutions for both <br />
+                  Enterprise and SMB businesses.
+                </p>
+              </div>
+              <div class="spacer"></div>
+              <div class="col-md-12 col-lg-4">
+                <img src="./images/puzzle-icon.png" />
+                <h4 class="box-heading">
+                  Flexible growth, add <br />
+                  features as you go.
+                </h4>
+                <p>
+                  Supply what your client needs now, <br />
+                  add on more features later.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section Feature -->
+        <section id="MoreDetails">
+          <div class="container">
+            <div class="row feature-row">
+              <div class="col-md-12 col-lg-6 feature-col">
+                <img
+                  class="feature-image"
+                  src="./images/call-centre-girl.png"
+                />
+              </div>
+              <div class="col-md-12 col-lg-6 feature-background">
+                <div class="card feature-card">
+                  <div class="card-body feature-body">
+                    <h5 class="card-title feature-heading">Call Centre</h5>
+                    <h6 class="card-subtitle feature-subtitle">
+                      For both OmniPCX Office & Enterprise
+                    </h6>
+                    <p class="card-text feature-text">
+                      Vurella’s call centre solution provides a fully featured
+                      ACD package, including a wallboard to display live
+                      statistics for both inbound calls and the state of each
+                      agent. A supervisor application is also included and
+                      enables a range of reports to be generated on the fly or
+                      periodically.
+                    </p>
+                    <p class="card-text feature-text">
+                      With Vurella’s call centre, agents can now also work
+                      remotely using Rainbow on a PC or even via their
+                      smartphone to accept calls.
+                    </p>
+                    <a
+                      href="/call-centre-features.html"
+                      class="btn with-arrow btn-feature"
+                    >
+                      <span style="font-weight: 300">
+                        Features
+                        <i class="las la-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row feature-row" id="CallRecording">
+              <div class="col-md-12 col-lg-6 feature-background one">
+                <div class="card feature-card">
+                  <div class="card-body feature-body">
+                    <h5 class="card-title feature-heading">Call Recording</h5>
+                    <h6 class="card-subtitle feature-subtitle">
+                      VoIP, SIP, ISDN, Analog Recording
+                    </h6>
+                    <p class="card-text feature-text">
+                      Vurella’s call recording solutions have everything your
+                      client needs to safety record and store calls. Whether
+                      your client has analogue lines or SIP trunks, we can
+                      record it.
+                    </p>
+                    <p class="card-text feature-text">
+                      Importantly, all our call recording solutions include
+                      pause & resume, encryption, call archiving and deletion,
+                      as well as a host of other features to ensure your clients
+                      can adhere to both PCI and GDPR data privacy policies.
+                    </p>
+                    <a
+                      href="/call-recording-features.html"
+                      class="btn with-arrow btn-feature"
+                    >
+                      <span style="font-weight: 300">
+                        Features
+                        <i class="las la-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-6 feature-col two">
+                <img class="feature-image" src="./images/laptop-headset.png" />
+              </div>
+            </div>
+            <div class="row feature-row">
+              <div class="col-md-12 col-lg-6 feature-col">
+                <img class="feature-image" src="./images/people-puzzle.png" />
+              </div>
+              <div class="col-md-12 col-lg-6 feature-background">
+                <div class="card feature-card">
+                  <div class="card-body feature-body">
+                    <h5 class="card-title feature-heading">CTI Solutions</h5>
+                    <h6 class="card-subtitle feature-subtitle">
+                      CRM Connectors, Call Logging, Click to Dial
+                    </h6>
+                    <p class="card-text feature-text">
+                      vSUITE also includes a range of CTI features that ensure
+                      no box is left unticked. This Includes a call logging
+                      package, click to dial, a range of pre-built CRM
+                      connectors and 3rd party integration options.
+                    </p>
+                    <p class="card-text feature-text">
+                      In addition, where required these off the shelf features
+                      can also be customised to fit your clients requirements,
+                      ensuring you can offer a seamless solution.
+                    </p>
+                    <a
+                      href="/cti-features.html"
+                      class="btn with-arrow btn-feature"
+                    >
+                      <span style="font-weight: 300">
+                        Features
+                        <i class="las la-arrow-right"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section Rainbow -->
+        <section
+          id="RainbowSolutions"
+          class="ls ms s-py-55 s-py-lg-95 s-py-xl-105"
+        >
+          <div class="container" style="padding-bottom: 155px">
+            <div class="row">
+              <div class="offset-lg-2 col-lg-8 text-center card-head">
+                <p class="subheading"><img src="/images/rainbow.png" /></p>
+                <h4 class="special-heading">Applications & Integration</h4>
+                <div class="divider-30 divider-lg-40"></div>
+              </div>
+
+              <div class="col-md-12 col-lg-4">
+                <div class="card rainbow-card-left">
+                  <img class="card-img-top" src="./images/acd-mobile.png" />
+                  <div class="card-body rainbow-body">
+                    <h5 class="card-title rainbow-title">Call Centre Agent</h5>
+                    <p class="card-text rainbow-text">
+                      Vurella’s Rainbow agent is available on PC or Mobile and
+                      provides agents with the freedom to work from home.
+                      Despite the agent working externally, the supervisor can
+                      still monitor the agents presence, and what’s more, the
+                      agent does not need a VPN, just a standard internet
+                      connection.
+                    </p>
+                    <div id="btnGetInTouch" class="btn with-arrow btn-touch">
+                      <span style="font-weight: 300">
+                        Get In Touch
+                        <i class="las la-arrow-right"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="spacer"></div>
+              <div class="col-md-12 col-lg-4">
+                <div class="card rainbow-card-mid">
+                  <img class="card-img-top" src="./images/laptop.png" />
+                  <div class="card-body rainbow-body">
+                    <h5 class="card-title rainbow-title">Busy Lamp Field</h5>
+                    <p class="card-text rainbow-text">
+                      Our busy lamp field provides users with the ability to
+                      monitor extensions company wide in order to see when their
+                      colleagues are busy or available. In addition, the user
+                      can also accept & transfer inbound calls by filtering
+                      their group contacts and then dragging and dropping the
+                      call onto the appropriate extension, much like a mini
+                      operator console.
+                    </p>
+                    <div
+                      id="btnGetInTouchBLF"
+                      class="btn with-arrow btn-touch-mid"
+                    >
+                      <span style="font-weight: 300">
+                        Get In Touch
+                        <i class="las la-arrow-right"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="spacer"></div>
+              <div class="col-md-12 col-lg-4">
+                <div class="card rainbow-card-right">
+                  <img
+                    class="card-img-top"
+                    src="./images/solution-graphic.png"
+                  />
+                  <div class="card-body rainbow-body">
+                    <h5 class="card-title rainbow-title">Rainbow Solutions</h5>
+                    <p class="card-text rainbow-text">
+                      Using Alcatel Lucent’s Rainbow platform to support new
+                      ideas, means opportunities to create new applications are
+                      endless. Our team has developed a number of bespoke
+                      products for existing clients and are always open to new
+                      solutions. So if you’re client has a bespoke requirement,
+                      why not give us a call. .
+                    </p>
+                    <div id="btnGetInTouchR" class="btn with-arrow btn-touch">
+                      <span style="font-weight: 300">
+                        Get In Touch
+                        <i class="las la-arrow-right"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer
+          id="Contactus"
+          class="
+            page_footer page_footer
+            s-borderbottom-container
+            ds
+            s-pt-60 s-pb-15 s-pt-lg-90 s-pb-lg-50 s-pt-xl-110 s-pb-xl-70
+            c-gutter-50
+          "
+        >
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-md-6 col-lg-3 animate mr-auto"
+                data-animation="fadeInUp"
+              >
+                <div class="widget widget_text mt-lg-10">
+                  <a href="./" class="logo">
+                    <img src="images/logo-grey.png" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+                <div class="widget widget_nav_menu">
+                  <ul class="menu">
+                    <li>
+                      <a id="footer-home" href="#Home">Home</a>
+                    </li>
+                    <li>
+                      <a id="footer-our-channel" href="#OurChannel"
+                        >Our Channel</a
+                      >
+                    </li>
+                    <li>
+                      <a id="footer-v-suite" href="#vSUITE">vSUITE</a>
+                    </li>
+                    <li>
+                      <a id="footer-rainbow-solutions" href="#RainbowSolutions"
+                        >Rainbow Solutions</a
+                      >
+                    </li>
+                    <li style="margin-top: 8px">
+                      <span style="font-size: 14px; padding-right: 10px"
+                        >&copy;</span
+                      >
+                      <span style="font-size: 12px" class="copyright_year"
+                        >2021 Copyright</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+                <div class="widget widget_contact_list">
+                  <div class="contact-item">
+                    <p class="title">Give Us A Call</p>
+                    <a class="content" href="tel:+44 203 0960 788"
+                      >+44 203 0960 788</a
+                    >
+                  </div>
+                  <div class="contact-item">
+                    <p class="title">Email Us</p>
+                    <a class="content" href="mailto:enquiries@vurella.com"
+                      >enquiries@vurella.com</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+                <div class="widget widget_social_buttons">
+                  <div class="widget-title">Join Us</div>
+                  <a
+                    href="https://www.linkedin.com/company/vurella/"
+                    class="fa fa-linkedin paper-plane border-icon rounded-icon"
+                    title="linkedin"
+                    target="blank"
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/Vurella-1377243165631796/"
+                    class="ml-0 fa fa-facebook border-icon rounded-icon"
+                    title="facebook"
+                    target="blank"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <section id="copyright" class="page_copyright ds s-py-20">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-md-12 text-center animate"
+                data-animation="fadeInUp"
+                style="color: #7f7d7d; font-size: 12px"
+              >
+                <span>
+                  Harlow Enterprise Hub, Kao Hockham Building, Harlow, Essex,
+                  CM20 2NQ
+                </span>
+                <span style="padding: 0 20px">Registered Company 09576835</span>
+                <span>VAT No. 244 3407 26</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- eof #box_wrapper -->
+    </div>
+    <!-- eof #canvas -->
+
+    <script src="js/compressed.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=loadCaptcha&render=explicit"
+      async
+      defer
+    ></script>
+    <script type="text/javascript">
+      let getInTouchRecaptcha = false;
+      let captchaContainerGetInTouch = null;
+      let getInTouchBLFRecaptcha = false;
+      let captchaContainerGetInTouchBLF = null;
+      let getInTouchRRecaptcha = false;
+      let captchaContainerGetInTouchR = null;
+
+      $(document).ready(function () {
+        SendEmail = async (formData) => {
+          await fetch("https://api.vurella.com/api/touch", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              if (data.replace(/['"]+/g, "") === "OK") {
+                $("#getInTouch").modal("hide");
+                $("#getInTouchSent").modal("show");
+              } else {
+                alert(data.replace(/['"]+/g, ""));
+              }
+              $("#btncontact-me").prop("disabled", false);
+              console.log("Success:", data);
+            })
+            .catch((error) => {
+              $("#btncontact-me").prop("disabled", false);
+              console.error("Error:", error);
+            });
+        };
+
+        $("#btnGetInTouch").on("click", (e) => {
+          if ($("#getInTouchRecaptchaDiv").html().length == 0) {
+            let loadCaptcha = () => {
+              captchaContainerGetInTouch = grecaptcha.render(
+                "getInTouchRecaptchaDiv",
+                {
+                  sitekey: "6LfwgVIUAAAAAE3RiU5nQ7IIRrOollsFOnrGabMy",
+                  // sitekey: "6LfgIIUbAAAAAJ6wwYV2wRtWC7UMbAM44n_GKGD7",
+                  callback: function (response) {
+                    console.log(response);
+                    getInTouchRecaptcha = true;
+                  },
+                  "expired-callback": function (response) {
+                    console.log(response);
+                    getInTouchRecaptcha = false;
+                  },
+                }
+              );
+            };
+            loadCaptcha();
+          }
+          $("#getInTouch").modal("show");
+        });
+
+        $("#btnGetInTouchCancel").on("click", () => {
+          $("#getInTouch").modal("hide");
+        });
+
+        $("#getInTouch").on("hidden.bs.modal", function () {
+          grecaptcha.reset(captchaContainerGetInTouch);
+          getInTouchRecaptcha = false;
+
+          // change background color
+          $("#InputCompanyName").css("border-color", "#b9b9b9");
+          $("#InputFullName").css("border-color", "#b9b9b9");
+          $("#InputEmail").css("border-color", "#b9b9b9");
+          $("#InputContactNumber").css("border-color", "#b9b9b9");
+
+          $("#InputCompanyName").val("");
+          $("#InputFullName").val("");
+          $("#InputEmail").val("");
+          $("#InputContactNumber").val("");
+        });
+
+        // $("#InputEmail").on("keyup", function () {
+        //   const regex =
+        //     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        //   let valid = regex.test(this.value);
+        //   if (!valid) {
+        //     $("#InputEmail").css("border-color", "#bf1e2d");
+        //   } else {
+        //     $("#InputEmail").css("border-color", "#b9b9b9");
+        //   }
+        // });
+
+        $("#contact-form").on("submit", (e) => {
+          if ($("#InputCompanyName").val() == "") {
+            $("#InputCompanyName").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputCompanyName").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputFullName").val() == "") {
+            $("#InputFullName").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputFullName").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputEmail").val() == "") {
+            $("#InputEmail").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputEmail").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputContactNumber").val() == "") {
+            $("#InputContactNumber").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputContactNumber").css("border-color", "#b9b9b9");
+          }
+
+          // form contact submit
+          if (
+            $("#InputCompanyName").val() != "" &&
+            $("#InputFullName").val() != "" &&
+            $("#InputEmail").val() != "" &&
+            $("#InputContactNumber").val() != "" &&
+            getInTouchRecaptcha != false
+          ) {
+            let formData = {
+              companyname: $("#InputCompanyName").val(),
+              name: $("#InputFullName").val(),
+              email: $("#InputEmail").val(),
+              number: $("#InputContactNumber").val(),
+            };
+            $("#btncontact-me").prop("disabled", true);
+
+            SendEmail(formData);
+          }
+
+          e.preventDefault();
+        });
+
+        //BLF
+
+        SendEmailBLF = async (formData) => {
+          await fetch("https://api.vurella.com/api/touch", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              if (data.replace(/['"]+/g, "") === "OK") {
+                $("#getInTouchBLF").modal("hide");
+                $("#getInTouchSent").modal("show");
+              } else {
+                alert(data.replace(/['"]+/g, ""));
+              }
+              $("#btncontact-me-blf").prop("disabled", false);
+              console.log("Success:", data);
+            })
+            .catch((error) => {
+              $("#btncontact-me-blf").prop("disabled", false);
+
+              console.error("Error:", error);
+            });
+        };
+
+        $("#btnGetInTouchBLF").on("click", (e) => {
+          if ($("#getInTouchBLFRecaptchaDiv").html().length == 0) {
+            let loadCaptcha = () => {
+              captchaContainerGetInTouchBLF = grecaptcha.render(
+                "getInTouchBLFRecaptchaDiv",
+                {
+                  sitekey: "6LfwgVIUAAAAAE3RiU5nQ7IIRrOollsFOnrGabMy",
+                  // sitekey: "6LfgIIUbAAAAAJ6wwYV2wRtWC7UMbAM44n_GKGD7",
+                  callback: function (response) {
+                    console.log(response);
+                    getInTouchBLFRecaptcha = true;
+                  },
+                  "expired-callback": function (response) {
+                    console.log(response);
+                    getInTouchBLFRecaptcha = false;
+                  },
+                }
+              );
+            };
+            loadCaptcha();
+          }
+          $("#getInTouchBLF").modal("show");
+        });
+
+        $("#btnGetInTouchBLFCancel").on("click", () => {
+          $("#getInTouchBLF").modal("hide");
+        });
+
+        $("#getInTouchBLF").on("hidden.bs.modal", function () {
+          grecaptcha.reset(captchaContainerGetInTouchBLF);
+          getInTouchBLFRecaptcha = false;
+
+          // change background color
+          $("#InputCompanyNameBLF").css("border-color", "#b9b9b9");
+          $("#InputFullNameBLF").css("border-color", "#b9b9b9");
+          $("#InputEmailBLF").css("border-color", "#b9b9b9");
+          $("#InputContactNumberBLF").css("border-color", "#b9b9b9");
+
+          $("#InputCompanyNameBLF").val("");
+          $("#InputFullNameBLF").val("");
+          $("#InputEmailBLF").val("");
+          $("#InputContactNumberBLF").val("");
+        });
+
+        // $("#InputEmail").on("keyup", function () {
+        //   const regex =
+        //     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        //   let valid = regex.test(this.value);
+        //   if (!valid) {
+        //     $("#InputEmail").css("border-color", "#bf1e2d");
+        //   } else {
+        //     $("#InputEmail").css("border-color", "#b9b9b9");
+        //   }
+        // });
+
+        $("#contact-form-blf").on("submit", (e) => {
+          if ($("#InputCompanyNameBLF").val() == "") {
+            $("#InputCompanyNameBLF").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputCompanyNameBLF").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputFullNameBLF").val() == "") {
+            $("#InputFullNameBLF").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputFullNameBLF").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputEmailBLF").val() == "") {
+            $("#InputEmailBLF").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputEmailBLF").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputContactNumberBLF").val() == "") {
+            $("#InputContactNumberBLF").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputContactNumberBLF").css("border-color", "#b9b9b9");
+          }
+
+          // form contact submit
+          if (
+            $("#InputCompanyNameBLF").val() != "" &&
+            $("#InputFullNameBLF").val() != "" &&
+            $("#InputEmailBLF").val() != "" &&
+            $("#InputContactNumberBLF").val() != "" &&
+            getInTouchBLFRecaptcha != false
+          ) {
+            let formData = {
+              companyname: $("#InputCompanyNameBLF").val(),
+              name: $("#InputFullNameBLF").val(),
+              email: $("#InputEmailBLF").val(),
+              number: $("#InputContactNumberBLF").val(),
+            };
+            $("#btncontact-me-blf").prop("disabled", true);
+            SendEmailBLF(formData);
+          }
+
+          e.preventDefault();
+        });
+
+        //Rainbow
+        SendEmailR = async (formData) => {
+          await fetch("https://api.vurella.com/api/touch", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.text())
+            .then((data) => {
+              if (data.replace(/['"]+/g, "") === "OK") {
+                $("#getInTouchR").modal("hide");
+                $("#getInTouchSent").modal("show");
+              } else {
+                alert(data.replace(/['"]+/g, ""));
+              }
+              $("#btncontact-me-r").prop("disabled", false);
+              console.log("Success:", data);
+            })
+            .catch((error) => {
+              $("#btncontact-me-r").prop("disabled", false);
+
+              console.error("Error:", error);
+            });
+        };
+
+        $("#btnGetInTouchR").on("click", (e) => {
+          if ($("#getInTouchRRecaptchaDiv").html().length == 0) {
+            let loadCaptcha = () => {
+              captchaContainerGetInTouchR = grecaptcha.render(
+                "getInTouchRRecaptchaDiv",
+                {
+                  sitekey: "6LfwgVIUAAAAAE3RiU5nQ7IIRrOollsFOnrGabMy",
+                  // sitekey: "6LfgIIUbAAAAAJ6wwYV2wRtWC7UMbAM44n_GKGD7",
+                  callback: function (response) {
+                    console.log(response);
+                    getInTouchRRecaptcha = true;
+                  },
+                  "expired-callback": function (response) {
+                    console.log(response);
+                    getInTouchRRecaptcha = false;
+                  },
+                }
+              );
+            };
+            loadCaptcha();
+          }
+          $("#getInTouchR").modal("show");
+        });
+
+        $("#btnGetInTouchRCancel").on("click", () => {
+          $("#getInTouchR").modal("hide");
+        });
+
+        $("#getInTouchR").on("hidden.bs.modal", function () {
+          grecaptcha.reset(captchaContainerGetInTouchR);
+          getInTouchRRecaptcha = false;
+
+          // change background color
+          $("#InputCompanyNameR").css("border-color", "#b9b9b9");
+          $("#InputFullNameR").css("border-color", "#b9b9b9");
+          $("#InputEmailR").css("border-color", "#b9b9b9");
+          $("#InputContactNumberR").css("border-color", "#b9b9b9");
+
+          $("#InputCompanyNameR").val("");
+          $("#InputFullNameR").val("");
+          $("#InputEmailR").val("");
+          $("#InputContactNumberR").val("");
+        });
+
+        // $("#InputEmail").on("keyup", function () {
+        //   const regex =
+        //     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        //   let valid = regex.test(this.value);
+        //   if (!valid) {
+        //     $("#InputEmail").css("border-color", "#bf1e2d");
+        //   } else {
+        //     $("#InputEmail").css("border-color", "#b9b9b9");
+        //   }
+        // });
+
+        $("#contact-form-r").on("submit", (e) => {
+          if ($("#InputCompanyNameR").val() == "") {
+            $("#InputCompanyNameR").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputCompanyNameR").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputFullNameR").val() == "") {
+            $("#InputFullNameR").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputFullNameR").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputEmailR").val() == "") {
+            $("#InputEmailR").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputEmailR").css("border-color", "#b9b9b9");
+          }
+          if ($("#InputContactNumberR").val() == "") {
+            $("#InputContactNumberR").css("border-color", "#bf1e2d");
+          } else {
+            $("#InputContactNumberR").css("border-color", "#b9b9b9");
+          }
+
+          // form contact submit
+          if (
+            $("#InputCompanyNameR").val() != "" &&
+            $("#InputFullNameR").val() != "" &&
+            $("#InputEmailR").val() != "" &&
+            $("#InputContactNumberR").val() != "" &&
+            getInTouchRRecaptcha != false
+          ) {
+            let formData = {
+              companyname: $("#InputCompanyNameR").val(),
+              name: $("#InputFullNameR").val(),
+              email: $("#InputEmailR").val(),
+              number: $("#InputContactNumberR").val(),
+            };
+            $("#btncontact-me-r").prop("disabled", true);
+
+            SendEmailR(formData);
+          }
+
+          e.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>
