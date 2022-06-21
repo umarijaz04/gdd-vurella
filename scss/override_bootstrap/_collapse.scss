@@ -1,0 +1,126 @@
+/* bootstrap collapse*/
+//unstyled
+[data-toggle="collapse"] {
+  display: inline-block;
+  position: relative;
+  padding-right: 20px;
+}
+
+//cards as tabs
+[role="tablist"] {
+  .card {
+    border-radius: 0;
+    border: none;
+    background: none;
+    border-bottom: 1px solid $borderColor !important;
+    &:first-child .card-header a {
+      padding-top: 0;
+    }
+  }
+  .card-header {
+    padding: 0;
+    background: none;
+    border: none;
+    a {
+      position: relative;
+      padding: 15px 30px 15px 0;
+      line-height: 1.2;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $darkgreyColor;
+      display: flex;
+      align-items: center;
+      @media (min-width: 992px) {
+        padding: 30px 0;
+        font-size: 20px;
+      }
+      &:before {
+        content: '?';
+        font-family: 'Montserrat', sans-serif;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 21px;
+        position: relative;
+        background: $gradientBackground;
+        border-radius: 50%;
+        color: $lightColor;
+        font-size: 20px;
+        font-weight: 500;
+        min-width: 30px;
+        height: 30px;
+        transition: 0.3s all;
+      }
+      &:after {
+        content: '-';
+        font-family: 'Montserrat', sans-serif;
+        color: $colorMain2;
+        font-size: 30px;
+        font-weight: 300;
+        position: absolute;
+        right: 0;
+        transform: rotate(0);
+        transition: 0.3s all;
+      }
+      &:hover {
+        color: $colorMain;
+        &:before,
+        &:after {
+          //opacity: 0.9;
+        }
+      }
+      &.collapsed {
+        &:after {
+          content: '+';
+          transform: rotate(90deg);
+        }
+      }
+      &.hero-bg:not(.collapsed) {
+        background: transparent;
+      }
+    }
+  }
+  .card-body {
+    padding: 0 15px 21px 49px;
+    @media (min-width: 992px) {
+      padding: 0 49px 21px;
+    }
+    &:before {
+      content: '\f105';
+      font-family: 'FontAwesome';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      border: 1px solid $colorMain2;
+      border-radius: 50%;
+      font-size: 16px;
+      color: $darkgreyColor;
+      font-weight: 500;
+      width: 30px;
+      height: 30px;
+      transition: 0.3s all;
+    }
+  }
+  .media img {
+    max-width: 80px;
+  }
+}
+
+.ls.ms {
+  [role="tablist"] .card-header a.collapsed {
+    background-color: $lightColor;
+  }
+}
+
+.tab-side {
+  + .tab-side {
+    margin-top: 15px;
+  }
+  .card-body {
+    padding-top: 20px;
+    position: relative;
+  }
+}

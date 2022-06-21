@@ -1,0 +1,390 @@
+/*
+** Buttons
+ */
+
+.btn {
+  font-size: 16px;
+  letter-spacing: 0;
+  border-width: 2px;
+  text-transform: none;
+  border-radius: 50px;
+  font-weight: 500;
+  position: relative;
+  padding: 0;
+  span {
+    white-space: normal;
+    position: relative;
+    display: inline-block;
+    padding: 11px 39px;
+    i {
+      margin-right: 6px;
+      position: relative;
+      top: 1px;
+    }
+  }
+  @media (min-width: 768px) {
+    &.btn-big span {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    &.btn-small span {
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+  }
+  &.with-arrow {
+   span {
+     padding-left: 27px;
+     padding-right: 27px;
+   }
+    span:after {
+      content: '';
+      width: 1px;
+      height: calc(100% + 4px);
+      position: absolute;
+      right: -1px;
+      top: -2px;
+      opacity: 0.1;
+      transition: 0.15s all;
+    }
+    i {
+      font-size: 14px;
+      padding: 0 27px 0 15px;
+      z-index: 1;
+      position: relative;
+    }
+    @media (min-width: 1200px) {
+      &.btn-wide {
+        min-width: 280px;
+      }
+    }
+  }
+  //for icons
+  &.round,
+  &.rounded {
+    padding: 23px;
+    line-height: 1;
+  }
+  + span {
+    margin: 0 21px 0 25px;
+  }
+  &.btn-wide {
+    min-width: 170px;
+  }
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+/*gradient background buttons*/
+.btn.btn-gradient,
+.btn.btn-outline-gradient {
+  background-color: transparent;
+  border: 2px solid transparent;
+  &:before {
+    content: '';
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    left: -2px;
+    top: -2px;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    background: linear-gradient(to right, rgba($colorMain3, 1) 0%, rgba($colorMain4, 1) 100%);
+    z-index: 0;
+    opacity: 1;
+    transition: all .15s ease-in-out;
+  }
+  &:hover {
+    border-color: $colorMain2;
+    background: transparent;
+    transition: all .15s ease-in-out;
+    &:before {
+      opacity: 0;
+    }
+  }
+}
+
+.btn.btn-outline-gradient {
+  color: $darkgreyColor;
+  border-color: $colorMain2;
+  transition: border-color 0.5s;
+  &:before {
+    opacity: 0;
+  }
+  &:hover {
+    color: $lightColor;
+    border-color: transparent;
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+
+/*With Arrow buttons*/
+.btn-gradient,
+.btn-darkgrey {
+  &.with-arrow {
+    span:after {
+      background-color: $lightColor;
+    }
+    &:hover span:after {
+      background-color: $darkgreyColor;
+    }
+  }
+}
+
+.btn-outline-gradient,
+.btn-outline-darkgrey {
+  &.with-arrow {
+    span:after {
+      background-color: $darkgreyColor;
+    }
+    &:hover span:after {
+      background-color: $lightColor;
+    }
+  }
+}
+
+.btn-grey,
+.btn-maincolor,
+.btn-outline-grey,
+.btn-outline-maincolor {
+  &.with-arrow {
+    span:after {
+      background-color: $darkgreyColor;
+    }
+  }
+}
+
+/*color background buttons*/
+.btn-gradient,
+.btn-maincolor,
+.btn-grey,
+.btn-darkgrey {
+  color: $lightColor;
+  &:hover {
+    background-color: transparent;
+    color: $darkgreyColor;
+  }
+}
+
+.btn-maincolor {
+  background-color: $colorMain;
+  border-color: $colorMain;
+}
+
+.btn-darkgrey {
+  background-color: $darkgreyColor;
+  border-color: $darkgreyColor;
+}
+
+.btn-grey {
+  color: $darkgreyColor;
+  background-color: $greyColor;
+  border-color: $greyColor;
+}
+
+/*color outline buttons*/
+.btn-outline-gradient,
+.btn-outline-maincolor,
+.btn-outline-grey,
+.btn-outline-darkgrey {
+  color: $darkgreyColor;
+  background-color: transparent;
+  &:hover {
+    color: $lightColor;
+  }
+}
+
+.btn-outline-maincolor {
+  border-color: $colorMain;
+  &:hover {
+    background-color: $colorMain;
+  }
+}
+
+.btn-outline-darkgrey {
+  border-color: $darkgreyColor;
+  &:hover {
+    background-color: $darkgreyColor;
+  }
+}
+
+.btn-outline-grey {
+  border-color: $greyColor;
+  &:hover {
+    color: $darkgreyColor;
+    background-color: $greyColor;
+  }
+}
+
+//Light grey section buttons style
+.ls.ms {
+
+  .btn-grey {
+    color: $darkgreyColor;
+    background-color: $lightColor;
+    border-color: $lightColor;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .btn-outline-grey {
+    border-color: $lightColor;
+    &:hover {
+      color: $darkgreyColor;
+      background-color: $lightColor;
+    }
+  }
+
+}
+
+//Dark section buttons style
+.ds {
+
+  .btn-gradient,
+  .btn-maincolor {
+    color: $lightColor;
+    &:hover {
+      color: $lightColor;
+    }
+  }
+
+  .btn-grey:hover {
+    color: $lightColor;
+  }
+
+  .btn-darkgrey {
+    color: $darkgreyColor;
+    background-color: $lightColor;
+    border-color: $lightColor;
+    &:hover {
+      background-color: transparent;
+      color: $lightColor;
+    }
+  }
+
+  .btn-outline-gradient,
+  .btn-outline-maincolor,
+  .btn-outline-grey,
+  .btn-outline-darkgrey {
+    color: $lightColor;
+  }
+
+  .btn-outline-grey:hover {
+    color: $darkgreyColor;
+  }
+
+  .btn-outline-darkgrey {
+    border-color: $lightColor;
+    &:hover {
+      color: $darkgreyColor;
+      background-color: $lightColor;
+    }
+  }
+
+  /*With Arrow buttons*/
+  .btn-grey,
+  .btn-darkgrey,
+  .btn-maincolor {
+    &.with-arrow {
+      span:after {
+        background-color: $darkgreyColor;
+      }
+      &:hover span:after {
+        background-color: $lightColor;
+      }
+    }
+  }
+
+  .btn-gradient {
+    &.with-arrow {
+      span:after {
+        background-color: $lightColor;
+      }
+    }
+  }
+
+  .btn-outline-gradient,
+  .btn-outline-grey,
+  .btn-outline-darkgrey,
+  .btn-outline-maincolor {
+    &.with-arrow {
+      span:after {
+        background-color: $lightColor;
+      }
+      &:hover span:after {
+        background-color: $darkgreyColor;
+      }
+    }
+  }
+
+}
+//Color section buttons style
+.cs {
+
+  .btn-maincolor {
+    background-color: $lightColor;
+    border-color: $lightColor;
+    color: $darkgreyColor;
+    &:hover {
+      background-color: transparent;
+      color: $lightColor;
+    }
+  }
+
+  .btn-outline-maincolor {
+    border-color: $lightColor;
+    &:hover {
+      color: $darkgreyColor;
+      background-color: $lightColor;
+    }
+  }
+
+}
+
+//Gradient section buttons style
+.gradient-background {
+
+  .btn.btn-gradient,
+  .btn.btn-outline-gradient {
+    border-color: $lightColor;
+    &:before {
+      background: $lightColor;
+    }
+  }
+
+  .btn.btn-gradient {
+    color: $darkgreyColor;
+    &:hover {
+      color: $lightColor;
+    }
+  }
+
+  .btn.btn-outline-gradient {
+    &:hover {
+      color: $darkgreyColor;
+    }
+  }
+
+}
+
+.wp-block-button {
+  margin-bottom: 10px;
+  .wp-block-button__link {
+    border: 2px solid #32373c;
+    &:hover {
+      background-color: transparent;
+      color: #32373c !important;
+    }
+  }
+  &.is-style-outline .wp-block-button__link:hover {
+    background-color: #32373c;
+    color: $lightColor !important;
+  }
+}

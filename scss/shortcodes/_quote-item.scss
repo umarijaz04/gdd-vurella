@@ -1,0 +1,147 @@
+.quote-item {
+  position: relative;
+  margin: 0;
+  padding: 30px;
+  @media (min-width: 992px) {
+    padding: 40px 40px 34px;
+  }
+  @media (min-width: 1200px) {
+    padding: 40px 40px 62px;
+  }
+  @media (min-width: 1200px) {
+    width: 255px;
+  }
+  @media (min-width: 1300px) {
+    width: 270px;
+  }
+  .quote-content {
+    &:before {
+      content: "";
+      -webkit-mask: url(../img/quote-mark.png) no-repeat center/contain;
+      background-color: $colorMain;
+      width: 52px;
+      height: 41px;
+      position: relative;
+      display: block;
+      margin-left: auto;
+      margin-bottom: 25px;
+      @media (min-width: 992px) {
+        margin-bottom: 61px;
+      }
+    }
+    .quote-author {
+      display: flex;
+      margin-top: 25px;
+      @media (min-width: 992px) {
+        margin-top: 46px;
+      }
+      img {
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 50%;
+        position: relative;
+        top: -6px;
+      }
+      .author-meta {
+        margin-left: 9px;
+        .author-name {
+          margin-bottom: 4px;
+        }
+        .author-position {
+          line-height: 1;
+        }
+      }
+    }
+  }
+  &.quote-large {
+    padding-bottom: 20px;
+    img {
+      min-width: 240px;
+      height: 100%;
+      flex-grow: 1;
+    }
+    .quote-content {
+      .author-name {
+        margin-top: -14px;
+        margin-bottom: 0;
+      }
+    }
+    @media (max-width: 1199px) {
+      > img {
+        display: none;
+      }
+    }
+    @media (min-width: 992px) {
+      padding-bottom: 30px;
+    }
+    @media (min-width: 1200px) {
+      width: 540px;
+      display: flex;
+      padding-bottom: 40px;
+      .quote-content {
+        padding-left: 40px;
+        &:before {
+          display: block;
+          margin-top: 0;
+          margin-bottom: 43px;
+        }
+        .author-name {
+          margin-top: 3em;
+          margin-bottom: 6px;
+        }
+      }
+    }
+    @media (min-width: 1300px) {
+      width: 570px;
+    }
+  }
+}
+
+
+.testimonials-slider2 {
+  .owl-item {
+    padding-top: 65px;
+    padding-bottom: 5px;
+  }
+}
+.quote-item2 {
+  position: relative;
+  padding: 40px;
+  .quote-author {
+    position: absolute;
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+    img {
+      max-width: 130px;
+    }
+  }
+  .quote-content {
+    margin-top: 77px;
+    &:before {
+      content: "";
+      -webkit-mask: url(../img/quote-mark.png) no-repeat center/contain;
+      background-color: $colorMain;
+      width: 52px;
+      height: 41px;
+      position: relative;
+      display: block;
+      margin: 0 auto 41px;
+    }
+    .author-meta {
+      padding-top: 5px;
+      .author-name {
+        margin-bottom: -3px;
+      }
+    }
+  }
+}
+
+#testimonials.with-particles {
+  .container {
+    pointer-events: none;
+    .testimonials-slider {
+      pointer-events: auto;
+    }
+  }
+}

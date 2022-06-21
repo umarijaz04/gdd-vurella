@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+
+  <head>
+    <title>Partner Portal – Vurella</title>
+    <meta charset="utf-8" />
+    <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta HTTP-EQUIV="Expires" CONTENT="-1">
+    
+    <meta name="theme-color" content="#bf1e2d" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/line-awesome.css" />
+    <link rel="stylesheet" href="css/main.css" class="color-switcher-link" />
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+      <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="">
+    <div class="preloader">
+      <div class="preloader_image pulse"></div>
+    </div>
+
+    <div id="inviteModal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              <img
+                src="images/textures/rainbowwithtext.png"
+                style="margin-top: -10px"
+              />
+              <span class="boldSpan">Rainbow </span>
+              <span class="unboldSpan">Invite</span>
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="description" style="text-align: justify">
+              Vurella would like to keep in touch and update its partners at
+              regular Intervals. To do this we would like to invite you to join
+              our partner bubble so that we can stay in touch.
+            </p>
+            <p class="description" style="text-align: justify">
+              To connect with us on Rainbow, please provide the email address
+              that is associated with your Rainbow account and we will send you
+              an invite to connect with us.
+            </p>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text" style="padding-top: 3px">
+                  <i class="fa fa-envelope"></i>
+                </div>
+              </div>
+              <input
+                type="email"
+                class="form-control demo-control"
+                id="txtinviteEmail"
+                placeholder="Email"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              id="cancelSendLicense"
+              class="btn btn-primary"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-default" id="btnInvite">Invite me</a>
+            <!-- <p class="description successMessage" id="licenseMessage"></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="licenseModal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              <img
+                src="images/textures/demolicense.png"
+                style="margin-top: -10px"
+              />
+              <span class="boldSpan-d">Demo </span>
+              <span class="unboldSpan-d">Licenses</span>
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="description" style="text-align: justify">
+              As a recognized Vurella partner we are pleased to offer you a 90%
+              discount against our software licenses for use within your
+              business or client demo area.
+            </p>
+            <p class="description" style="text-align: justify">
+              If you would like to take advantage of our demo license pack,
+              please send us a request by providing your email address below and
+              we will contact you to discuss your requirements.
+            </p>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text" style="padding-top: 3px">
+                  <i class="fa fa-envelope"></i>
+                </div>
+              </div>
+              <input
+                type="email"
+                class="form-control demo-control"
+                id="txtLicinseEmail"
+                placeholder="Email"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              id="cancelSendLicense"
+              class="btn btn-primary"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-default" id="btnSend">Send</a>
+            <!-- <p class="description successMessage" id="licenseMessage"></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- wrappers for visual page editor and boxed version of template -->
+    <div id="canvas">
+      <div id="box_wrapper">
+        <!-- template sections -->
+        <section
+          class="page_toplogo ls s-py-10 s-py-xl-25 my-1"
+        >
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-md-3 logo-centered">
+              <a href="./" class="logo">
+                <img src="./images/logo-dark.png" />
+              </a>
+              <div class="divider-20 divider-md-0"></div>
+            </div>
+            <div class="col-12 col-md-9">
+              <div class="toplogo-includes">
+                <div class="media">
+                  <div class="icon-styled color-main">
+                    <i class="ico ico-envelope"></i>
+                  </div>
+                  <div class="media-body">
+                    <h6>Email Us</h6>
+                    <p>
+                      <a class="links-darkgrey" href="mailto:enquiries@vurella.com"
+                        >enquiries@vurella.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="icon-styled color-main">
+                    <i class="ico ico-phone2"></i>
+                  </div>
+                  <div class="media-body">
+                    <h6>Give Us A Call</h6>
+                    <p>
+                      <a class="links-darkgrey" href="tel:+44 203 0960 788"
+                        >+44 203 0960 788</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="social-icons d-none d-xl-block">
+                  <a
+                    href="https://www.linkedin.com/company/vurella/"
+                    class="fa fa-linkedin border-icon rounded-icon"
+                    title="linkedin"
+                    target="blank"
+                  ></a>
+                  <a
+                    href="https://www.facebook.com/Vurella-1377243165631796/"
+                    class="fa fa-facebook border-icon rounded-icon"
+                    title="facebook"
+                    target="blank"
+                  ></a>
+                  <span class="dropdown" title="language" title="language">
+                    <img
+                      class="dropdown-toggle"
+                      src="./images/globr-icon.png"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      onmouseover="hover(this);"
+                      onmouseout="unhover(this);"
+                    />
+                    <svg height="35" width="20" style="cursor: default">
+                      <text
+                        fill="#2f2e2e"
+                        font-family="'Poppins', sans-serif"
+                        font-weight="300"
+                        font-size="12"
+                        letter-spacing=".926"
+                        style="text-transform: uppercase; direction: ltr"
+                      >
+                        <tspan x="0" y="16" id="ctry">gb</tspan>
+                      </text>
+                      <text
+                        fill="#2f2e2e"
+                        font-family="'Poppins', sans-serif"
+                        font-weight="300"
+                        font-size="12"
+                        letter-spacing=".926"
+                        style="text-transform: uppercase; direction: ltr"
+                      >
+                        <tspan x="0" y="29" id="lang">en</tspan>
+                      </text>
+                    </svg>
+                    <div
+                      class="dropdown-menu language-menu"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <a class="dropdown-item language-item" href="?ctry=gb&lang=en"
+                        ><img
+                          src="./images/flags2/gb-eng.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> English </span>
+                      </a>
+                      <a
+                        class="dropdown-item language-item disabled disabled-link"
+                        href="?ctry=fr&lang=fr"
+                        ><img
+                          src="./images/flags2/fr.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> French </span>
+                      </a>
+                      <a
+                        class="dropdown-item language-item disabled disabled-link"
+                        href="?ctry=de&lang=de"
+                        ><img
+                          src="./images/flags2/de.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> German </span>
+                      </a>
+                      <a
+                        class="dropdown-item language-item disabled disabled-link"
+                        href="?ctry=it&lang=it"
+                        ><img
+                          src="./images/flags2/it.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> Italian </span>
+                      </a>
+                      <a
+                        class="dropdown-item language-item disabled disabled-link"
+                        href="?ctry=es&lang=es"
+                        ><img
+                          src="./images/flags2/es.png"
+                          width="25px"
+                          class="language-text"
+                        />
+                        <span> Spanish </span>
+                      </a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </section>
+
+        <header
+          class="
+            page_header
+            ls
+            s-bordertop
+            header-small
+            line-header
+            s-py-5 s-py-lg-0
+          "
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-1 col-xl-8 order-1 order-xl-1 nav-col">
+                <div class="nav-wrap with-top-buttons">
+                  <!-- main nav start -->
+                  <nav class="top-nav">
+                    <ul class="nav sf-menu">
+                      <li>
+                        <a href="/">Home</a>
+                      </li>
+                      <li>
+                        <a id="product-resources" href="#productResources"
+                          >Product Resources</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                  <!-- eof main nav -->
+                </div>
+              </div>
+              <div class="col-11 col-xl-4 order-2 order-xl-2 text-right">
+                <div class="dropdown show">
+                  <button
+                    class="btn btn-outline-partner dropdown"
+                    id="partnerLogout"
+                  >
+                    <span style="font-weight: 300">
+                      <!-- <img
+                        style="margin-bottom: 2px"
+                        src="./images/partner-icon.png"
+                      /> -->
+                      Logout
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- header toggler -->
+
+          <span class="toggle_menu main-toggle"><span></span></span>
+        </header>
+
+        <!-- product-resources -->
+        <div class="container" id="docList">
+          <div class="row">
+            <div class="col-xl-8">
+              <h1>Partner Portal</h1>
+            </div>
+            <div class="col-xl-4">
+              <div class="row" style="padding-top: 0px">
+                <div class="col-md-12 rainbow">
+                  <!-- <p>
+                    Join the
+                    <a
+                      href="#"
+                      id="linkVurella"
+                      style="color: #000; text-decoration: underline"
+                      >Vurella</a
+                    >
+                    Rainbow Bubble
+                  </p>
+                  <img src="images/textures/rainbow.png" /> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div
+                class="description-2 animated"
+                style="padding-bottom: 15px; text-align: justify"
+              >
+                This partner portal provides you with access to the latest
+                product datasheets, technical documents and software downloads.
+                If you are looking for assistance and cannot find what you are
+                looking for here, please contact us by phone or email and we
+                will be happy to assist you.
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-8">
+              <img
+                src="images/textures/Partners-Modified.jpg"
+                class="img-responsive headerimage"
+              />
+            </div>
+            <div class="col-xl-4">
+              <div class="row redsection">
+                <div class="col-md-12">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h3
+                      class="reseller"
+                      >
+                        Reseller Support
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="row" style="margin-top: 12px;">
+                    <div class="col-md-12">
+                      <hr class="portal-hr" />
+                    </div>
+                  </div>
+                  <div class="row" style="margin-top: 10px; margin-bottom: -10px;">
+                    <div class="col-md-12">
+                      <h4
+                      class="assistance"
+                      >
+                        Assistance
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="description animated portal-red-description">
+                        <i class="fa fa-envelope reseller-icon"></i
+                        ><a
+                          href="mailto:enquiries@vurella.com"
+                          style="color: white; text-decoration: none"
+                          >enquiries@vurella.com</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="description animated portal-red-description">
+                        <i class="fa fa-phone reseller-icon"></i>+44 (0)203 0960
+                        788
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="description animated portal-red-description">
+                        <i class="fa fa-ticket reseller-icon"></i>Raise a Ticket
+                        <span class="ticket"
+                          ><a
+                            href="https://vurella.freshdesk.com/"
+                            target="_blank"
+                            style="
+                              color: white;
+                              text-decoration: none;
+                              cursor: pointer;
+                            "
+                            >GO</a
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="description animated portal-red-description">
+                        <i class="fa fa-align-justify reseller-icon"></i>Request
+                        Trial Licenses
+                        <span class="reseller-go"
+                          ><a
+                            id="btnTicketGo"
+                            href="#trialLicenses"
+                            style="
+                              color: white;
+                              text-decoration: none;
+                              cursor: pointer;
+                            "
+                            >GO</a
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row portal-red-row">
+                    <div class="col-md-12">
+                      <hr class="portal-hr" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="productResources">
+            <div class="col-md-12">
+              <h2 style="margin-top: 40px; margin-bottom: 0px">
+                Product Resources
+              </h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="portal-hr2" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Price Lists</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/xsl.png" class="pptpdfimage" />
+                United Kingdom Reseller Price List
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">16th December 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #26</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/United Kingdom Reseller Price List.xlsx"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/xsl.png" class="pptpdfimage" />
+                European Reseller Price List
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">16th December 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #26</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/European Reseller Price List.xlsx"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/xsl.png" class="pptpdfimage" />
+                U.S Reseller Price List
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">16th December 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #26</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/U.S Reseller Price List.xlsx"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/xsl.png" class="pptpdfimage" />
+                Australasia Reseller Price List
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">16th December 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #26</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/Australasia Reseller Price List.xlsx"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/xsl.png" class="pptpdfimage" />
+                Singapore Reseller Price List
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">16th December 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #26</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/Singapore Reseller Price List.xlsx"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/xsl.png" class="pptpdfimage" />
+                Rest Of the World Reseller Price List
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">16th December 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #26</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/Rest of the World Reseller Price List.xlsx"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <!-- <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                United Kingdom Reseller Price list (vCAM)
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">20th November 2018</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #02</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/vCAM_PRICE LIST_GBP_ER.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                European Reseller Price List (vCAM)
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">20th November 2018</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #02</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/vCAM_PRICE LIST_Euro_ER.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Rest Of the World Reseller Price List (vCAM)
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">20th November 2018</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #02</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/vCAM_PRICE LIST_Dollars_ER.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div> -->
+
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="portal-hr2" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4>System Requirements</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Hardware & Software Specifications
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">16th February 2022</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #20</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/Vurella Hardware and Software Specification Manaul Edition 20.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="portal-hr2" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Live Webinars</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/video.png" class="pptpdfimage" />
+                ACD Configuration
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">19th August 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Webinar_videos/ACD Configuration Webinar.mp4"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/video.png" class="pptpdfimage" />
+                ACD Agent Desktop
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">19th August 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Webinar_videos/ACD Agent Desktop.mp4"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div> 
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/video.png" class="pptpdfimage" />
+                ACD Rainbow Agent
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">19th August 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Webinar_videos/ACD Rainbow Agent.mp4"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>        
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/video.png" class="pptpdfimage" />
+                ACD Mobile Agent
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">19th August 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Webinar_videos/ACD Mobile Agent.mp4"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/video.png" class="pptpdfimage" />
+                ACD Wallboard
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">19th August 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Webinar_videos/ACD Wallboard.mp4"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/video.png" class="pptpdfimage" />
+                Supervisor ACD Reporting & Call Logging
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">19th August 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Webinar_videos/Supervsior ACD Reporting & Call Logging.mp4"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/video.png" class="pptpdfimage" />
+                Call Recording
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">19th August 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Webinar_videos/Call Recording.mp4"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/video.png" class="pptpdfimage" />
+                CRM Integration & Click to Dial
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">19th August 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Webinar_videos/CRM Integration & Click to Dial.mp4"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="portal-hr2" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Product Brochures</h4>
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Vurella full 16pp catalogue (UK & Europe)
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">1st May 2019</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/Vurella_CatalogueUK_InterActive.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Vurella full 16pp catalogue (Asia and Middle East)
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">1st May 2019</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/Vurella_CataloguePAK_SPAW2.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="portal-hr2" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Presentations</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/ppt.png" class="pptpdfimage" />
+                vSuite
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">30th September 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/vSUITE.pptx"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="portal-hr2" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Contact Centre (ACD)</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Product Datasheet
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">18th April 2018</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/vACD - Product Datasheet.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Rainbow ACD - Product Datasheet
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">23rd July 2020</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/Vurella & Rainbow_ACD_DS.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Wallboard Product Datasheet
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">18th April 2018</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/vBOARD - Product Datasheet.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Supervisor Product Datasheet
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">18th April 2018</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a href="#" class="btn btn-download pull-right disabled" download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="portal-hr2" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Call Recording</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Product Datasheet
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">18th April 2018</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/vRECORD - Product Datasheet.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                On-Premise Architecture
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">18th April 2018</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/On-Premise Architecture.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Cloud Architecture
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">18th April 2018</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/Cloud Architecture.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Hybrid Architecture
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">18th April 2018</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/Hybrid Architecture.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Port Mirroring
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">18th April 2018</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/Port Mirroring Guide.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                USB Recording Device Connection Diagram
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">18th April 2018</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/USB Recording Device Connection Diagram.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                GDPR Compliance Features
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">18th April 2018</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/vRECORD - GDPR Compliance Features.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Administrators Manual
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">25th May 2016</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/vRECORD Administrators Manual Edition 1.0.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Users Manual
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">24th May 2016</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #02</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/vRECORD Users Manual Edition 2.0.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="portal-hr2" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4>CTI Solutions</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Click to Dial & CRM Product Datasheet
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">18th April 2018</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/vCONNECT Product Datasheet.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Call Logging Datasheet
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">18th April 2018</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #02</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a href="Documents/Call Logger DS.pdf" class="btn btn-download pull-right" download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="portal-hr2" />
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-12">
+              <h4>Rainbow Solutions</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Busy Lamp Field (BLF) Product Datasheet
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">27th April 2019</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/Vurella_RainbowBLF_V2.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <hr class="portal-hr2" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Architecture Diagrams</h4>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                ACD in a Datacenter Environment
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">3rd September 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/ACD in a Datacenter Environment.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                ACD in an On-Premise Environment
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">3rd September 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/ACD in an On-Premise Environment.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                ACD High Availability in a Datacenter Environment
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">3rd September 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/ACD High Availability in a Datacenter Environment.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                ACD in a Muti-Tenant Datacenter Environment
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">8th September 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/ACD in a Muti-Tenant Datacenter Environment.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                SIP Trunk Recording in a Datacenter Environment
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">3rd September 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/SIP Trunk Recording in a Datacenter Environment.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                SIP Trunk Recording in a Datacenter Environment (Non-CSTA)
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">3rd September 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/SIP Trunk Recording in a Datacenter Environment (Non-CSTA).pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                SIP Trunk Recording in a Multi-Tenant Datacenter Environment
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">8th September 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/SIP Trunk Recording in a Multi-Tenant Datacenter Environment.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                On-Premise IP Extension Side and TDM Recording
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">3rd September 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/On-Premise IP Extension Side and TDM Recording.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="row rowmargin-top">
+            <div class="col-md-6 col-10">
+              <div class="description-2 animated">
+                <img src="images/textures/pdf.jpg" class="pptpdfimage" />
+                Hybrid Recording
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">3rd September 2021</div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="description-3 animated">Edition #01</div>
+            </div>
+
+            <div class="col-md-2 download-original">
+              <a
+                href="Documents/Hybrid Recording.pdf"
+                class="btn btn-download pull-right"
+                download
+                >Download</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="portal-hr2" />
+      <div class="container" id="trialLicenses">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Trial Licenses</h2>
+          </div>
+          <div class="col-md-12">
+            <div class="description-2 animated" style="text-align: justify">
+              As a recognized Vurella partner we are pleased to offer you a 90%
+              discount against our software licenses for use within your
+              business or customer demo area. We would also be happy to assist
+              you in installing and configuring the software. If you would like
+              to take advantage of our reseller discount, please contact us via
+              email using the button below. Please note, the discount is for
+              internal use only and entitles you to a maximum of 3 licenses per
+              product.
+            </div>
+          </div>
+          <div class="col-md-12" style="margin-top: 20px">
+            <button
+              class="btn btn-default"
+              id="btnRequestLicence"
+              style="font-size: 14px"
+            >
+              REQUEST LICENSES
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- <footer
+        id="footer"
+        style="background-color: #dbd9da; color: #2a2a2a; margin-top: 35px"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6" style="padding: 20px 15px 20px 15px">
+              <div class="row">
+                <div class="col-md-12">
+                  <h4 class="portal-footer-heading">Vurella Limited</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="description-4 animated">
+                    Harlow Enterprise Hub, Kao Hockham Building
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="description-4 animated">
+                    Endinbugh Way, Harlow, Essex CM20 2NQ
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="description-4 animated">United Kingdom</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" style="padding-top: 40px">
+              <img
+                src="images/textures/vurella.png"
+                class="botttomlogos"
+                style="padding-right: 0px"
+              />
+              <img src="images/textures/Nuvola.png" class="botttomlogos" />
+              <img src="images/textures/alcatel.png" class="botttomlogos" />
+              <img src="images/textures/rainbow.png" class="botttomlogos" />
+            </div>
+          </div>
+        </div>
+      </footer> -->
+      <footer
+        id="Contactus"
+        class="
+          page_footer page_footer
+          s-borderbottom-container
+          ds
+          s-pt-60 s-pb-15 s-pt-lg-90 s-pb-lg-50 s-pt-xl-110 s-pb-xl-70
+          c-gutter-50
+        "
+        style="margin-top: 35px"
+      >
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-6 col-lg-3 animate mr-auto"
+              data-animation="fadeInUp"
+            >
+              <div class="widget widget_text mt-lg-10">
+                <a href="./" class="logo">
+                  <img src="images/logo-grey.png" />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+              <div class="widget widget_nav_menu">
+                <ul class="menu">
+                  <li>
+                    <a id="footer-home" href="/">Home</a>
+                  </li>
+                  <li>
+                    <a id="footer-our-channel" href="/#OurChannel"
+                      >Our Channel</a
+                    >
+                  </li>
+                  <li>
+                    <a id="footer-v-suite" href="/#vSUITE">vSUITE</a>
+                  </li>
+                  <li>
+                    <a id="footer-rainbow-solutions" href="/#RainbowSolutions"
+                      >Rainbow Solutions</a
+                    >
+                  </li>
+                  <li>
+                    <a id="footer-update-password" target="blank" href="http://beta.vurella.com/UpdatePassword.aspx"
+                      >Admin</a
+                    >
+                  </li>
+                  <li style="margin-top: 8px">
+                    <span style="font-size: 14px; padding-right: 10px"
+                      >&copy;</span
+                    >
+                    <span style="font-size: 12px" class="copyright_year"
+                      >2021 Copyright</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+              <div class="widget widget_contact_list">
+                <div class="contact-item">
+                  <p class="title">Give Us A Call</p>
+                  <a class="content" href="tel:+44 203 0960 788"
+                    >+44 203 0960 788</a
+                  >
+                </div>
+                <div class="contact-item">
+                  <p class="title">Email Us</p>
+                  <a class="content" href="mailto:enquiries@vurella.com"
+                    >enquiries@vurella.com</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 animate" data-animation="fadeInUp">
+              <div class="widget widget_social_buttons">
+                <div class="widget-title">Join Us</div>
+                <a
+                  href="https://www.linkedin.com/company/vurella/"
+                  class="fa fa-linkedin paper-plane border-icon rounded-icon"
+                  title="linkedin"
+                  target="blank"
+                ></a>
+                <a
+                  href="https://www.facebook.com/Vurella-1377243165631796/"
+                  class="ml-0 fa fa-facebook border-icon rounded-icon"
+                  title="facebook"
+                  target="blank"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <section id="copyright" class="page_copyright ds s-py-20">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-12 text-center animate"
+              data-animation="fadeInUp"
+              style="color: #7f7d7d; font-size: 12px"
+            >
+              <span>
+                Harlow Enterprise Hub, Kao Hockham Building, Harlow, Essex,
+                CM20 2NQ
+              </span>
+              <span style="padding: 0 20px">Registered Company 09576835</span>
+              <span>VAT No. 244 3407 26</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- eof #box_wrapper -->
+    <!-- </div> -->
+    <!-- eof #canvas -->
+
+    <script src="js/compressed.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=loadCaptcha&render=explicit"
+      async
+      defer
+    ></script>
+    <script type="text/javascript">
+      function getCookie(name) {
+        // Split cookie string and get all individual name=value pairs in an array
+        var cookieArr = document.cookie.split(";");
+
+        // Loop through the array elements
+        for (var i = 0; i < cookieArr.length; i++) {
+          var cookiePair = cookieArr[i].split("=");
+
+          /* Removing whitespace at the beginning of the cookie name
+        and compare it with the given string */
+          if (name == cookiePair[0].trim()) {
+            // Decode the cookie value and return
+            return decodeURIComponent(cookiePair[1]);
+          }
+        }
+
+        // Return null if not found
+        return null;
+      }
+      let email = getCookie("email");
+      if (email == null) {
+        window.location.replace("/");
+      }
+      else{
+        if (email === "lee.benning@vurella.com" || email === "qasim.abbas@vurella.com") {
+          $("#footer-update-password").css("display", "block");
+        }
+        else {
+          $("#footer-update-password").css("display", "none");
+        }
+      }
+
+      $("#inviteModal").on("hidden.bs.modal", function () {
+        $("#txtinviteEmail").val("");
+        $("#txtinviteEmail").css("border-color", "#b9b9b9");
+      });
+
+      $("#linkVurella").on("click", function () {
+        $("#inviteModal").modal("show");
+        $("#txtinviteEmail").val(getCookie("email"));
+      });
+
+      $("#btnInvite").on("click", function () {
+        if ($("#txtinviteEmail").val() == "") {
+          $("#txtinviteEmail").css("border-color", "#bf1e2d");
+        } else {
+          $("#txtinviteEmail").css("border-color", "#b9b9b9");
+        }
+        if ($("#txtinviteEmail").val() !== "") {
+          $("#btnInvite").prop("disabled", true);
+          SendEmailRainbowInvite($("#txtinviteEmail").val());
+        }
+      });
+
+      SendEmailRainbowInvite = async (email) => {
+        await fetch("https://api.vurella.com/api/invite?email=" + email, {
+          method: "GET",
+        })
+          .then((response) => response.text())
+          .then((data) => {
+            if (data.replace(/['"]+/g, "") === "OK") {
+              $("#inviteModal").modal("hide");
+            } else {
+              alert(data.replace(/['"]+/g, ""));
+            }
+            $("#btnInvite").prop("disabled", false);
+            console.log("Success:", data);
+          })
+          .catch((error) => {
+            $("#btnInvite").prop("disabled", false);
+            console.error("Error:", error);
+          });
+      };
+
+      $("#licenseModal").on("hidden.bs.modal", function () {
+        $("#txtLicinseEmail").val("");
+        $("#txtLicinseEmail").css("border-color", "#b9b9b9");
+      });
+
+      $("#btnRequestLicence").on("click", function () {
+        $("#licenseModal").modal("show");
+        $("#txtLicinseEmail").val(getCookie("email"));
+      });
+
+      $("#btnSend").on("click", function () {
+        if ($("#txtLicinseEmail").val() == "") {
+          $("#txtLicinseEmail").css("border-color", "#bf1e2d");
+        } else {
+          $("#txtLicinseEmail").css("border-color", "#b9b9b9");
+        }
+        if ($("#txtLicinseEmail").val() !== "") {
+          $("#btnSend").prop("disabled", true);
+          SendEmailLicense($("#txtLicinseEmail").val());
+        }
+      });
+
+      SendEmailLicense = async (email) => {
+        await fetch("https://api.vurella.com/api/license?email=" + email, {
+          method: "GET",
+        })
+          .then((response) => response.text())
+          .then((data) => {
+            if (data.replace(/['"]+/g, "") === "OK") {
+              $("#licenseModal").modal("hide");
+            } else {
+              alert(data.replace(/['"]+/g, ""));
+            }
+            $("#btnSend").prop("disabled", false);
+            console.log("Success:", data);
+          })
+          .catch((error) => {
+            $("#btnSend").prop("disabled", false);
+            console.error("Error:", error);
+          });
+      };
+    </script>
+  </body>
+</html>

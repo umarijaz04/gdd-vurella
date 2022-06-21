@@ -1,0 +1,83 @@
+/* bootstrap breadcrumbs*/
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  color: inherit;
+  font-size: 16px;
+  & > li {
+    display: inline-block;
+    padding: 0;
+    float: none;
+    color: $lightColor;
+  }
+
+  .text-center & {
+    justify-content: center;
+  }
+  @media (min-width: 992px) {
+    .text-lg-right & {
+      justify-content: flex-end;
+    }
+  }
+   @media (min-width: 992px) {
+    .text-lg-left & {
+      justify-content: flex-start;
+    }
+  }
+  .breadcrumb-item.active span {
+
+  }
+
+  @media (max-width: 767px) {
+    .breadcrumb-item.active  {
+      padding-left: 0;
+      margin-top: 9px;
+      width: 100%;
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "\f105";
+  font-family: 'FontAwesome';
+  font-size: 14px;
+  padding: 0 10px 0 8px;
+}
+
+.breadcrumb .breadcrumb-item {
+  &.last-item span {
+    padding: 4px 11px;
+    border-radius: 50px;
+    background-color: $colorMain;
+  }
+  @media (max-width: 767px) {
+    &.last-item:not(:nth-child(2n)) {
+      width: 100%;
+      margin-top: 6px;
+      span {
+        color: $colorMain;
+        background-color: transparent;
+        padding: 0;
+      }
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.ds {
+  .breadcrumb .breadcrumb-item {
+    a {
+      color: $lightColor;
+    }
+    + .breadcrumb-item::before {
+      color: $lightColor;
+    }
+  }
+}

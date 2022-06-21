@@ -1,0 +1,105 @@
+ul, ol {
+  padding-left: 1.15rem;
+}
+
+ul {
+  list-style: disc;
+}
+
+ul ul {
+  list-style-type: circle;
+}
+
+ul ul ul {
+  list-style-type: revert;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+.list-bordered {
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  li {
+    padding-top: 7px;
+    padding-bottom: 8px;
+    border-top: 1px solid $borderColorRGBA;
+    border-bottom: 1px solid $borderColorRGBA;
+  }
+  li + li {
+    border-top: none;
+  }
+  &.no-top-border > li:first-child {
+    border-top: none;
+  }
+  &.no-bottom-border > li:last-child {
+    border-bottom: none;
+  }
+}
+
+
+ul.list-styled,
+ol.list-styled {
+  position: relative;
+  li {
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0
+    }
+  }
+}
+
+.list-styled ul,
+ul.list-styled {
+  list-style: none;
+  padding: 0;
+  color: $fontColor;
+  li {
+    position: relative;
+    padding: 3px 0;
+    &:before {
+      font-family: 'fontAwesome';
+      content: "\f105";
+      font-size: 14px;
+      color: $colorMain;
+      position: relative;
+      padding-right: 19px;
+      top: -1px;
+    }
+  }
+}
+
+.list-styled ol,
+ol.list-styled {
+  padding: 0;
+  counter-reset: li;
+  list-style: none outside none;
+    li {
+      padding: 3px 0 3px 39px;
+      &:before {
+      content: "." counter(li,decimal-leading-zero);
+      counter-increment: li;
+      color: $colorMain;
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+.list-icons {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post h2 + ul ,
+.post h2 + ol, {
+  margin-top: 30px;
+}

@@ -1,0 +1,34 @@
+/*
+** Service Extension
+*/
+
+.single-service {
+  .item-content {
+    padding: 27px 20px 23px;
+    @media (min-width: 768px) {
+      padding: 52px 100px 50px 100px;
+    }
+    @media (min-width: 992px) {
+      padding: 92px 200px 90px 200px;
+    }
+    .service-progress {
+      margin: 31px 0 41px;
+    }
+  }
+  .service-title {
+    margin: 30px 0 41px;
+  }
+}
+
+.icon-box.service-box {
+  .service-title {
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 18px;
+  }
+  @media (min-width: 992px) {
+    .service-title {
+      margin-top: 30px;
+    }
+  }
+}
